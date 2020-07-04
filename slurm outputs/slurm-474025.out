@@ -1,0 +1,8 @@
+extracting all features from dataset:   0%|          | 0/25 [00:00<?, ?it/s]extracting all features from dataset:  12%|█▏        | 3/25 [00:00<00:00, 23.37it/s]extracting all features from dataset:  24%|██▍       | 6/25 [00:00<00:00, 23.98it/s]extracting all features from dataset:  36%|███▌      | 9/25 [00:00<00:00, 24.45it/s]extracting all features from dataset:  48%|████▊     | 12/25 [00:00<00:00, 25.07it/s]extracting all features from dataset:  60%|██████    | 15/25 [00:00<00:00, 25.54it/s]extracting all features from dataset:  72%|███████▏  | 18/25 [00:00<00:00, 25.93it/s]extracting all features from dataset:  84%|████████▍ | 21/25 [00:00<00:00, 26.23it/s]extracting all features from dataset:  96%|█████████▌| 24/25 [00:00<00:00, 26.45it/s]extracting all features from dataset: 100%|██████████| 25/25 [00:00<00:00, 26.06it/s]
+extracting all features from dataset:   0%|          | 0/5 [00:00<?, ?it/s]extracting all features from dataset:  60%|██████    | 3/5 [00:00<00:00, 25.98it/s]extracting all features from dataset: 100%|██████████| 5/5 [00:00<00:00, 25.77it/s]
+Loading checkpoint: saved_models/seqsup_resnet18+128_cifar100_cpb10_epo100_bs1000_lr0.01_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0/checkpoints/labelbatch3/model-epoch99.pt
+evaluate using label_batch: 3
+Files already downloaded and verified
+Files already downloaded and verified
+PCA: 0.379
+SVD: 0.387

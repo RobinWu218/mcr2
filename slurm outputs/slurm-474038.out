@@ -1,0 +1,6 @@
+extracting all features from dataset:   0%|          | 0/5 [00:00<?, ?it/s]extracting all features from dataset:  80%|████████  | 4/5 [00:00<00:00, 36.98it/s]extracting all features from dataset: 100%|██████████| 5/5 [00:00<00:00, 37.32it/s]
+evaluate using label_batch: 3
+Files already downloaded and verified
+Loading checkpoint: saved_models/seqsupce_resnet18+cifar100_cpb10_epo50_bs1000_lr0.01_mom0.9_wd0.0005_lcr0.0/checkpoints/labelbatch3/model-epoch49.pt
+Files already downloaded and verified
+Test Acc: 0.0

@@ -24,7 +24,8 @@ def svm(args, train_features, train_labels, test_features, test_labels):
 
 
 def knn(args, train_features, train_labels, test_features, test_labels):
-    """Perform k-Nearest Neighbor classification using cosine similarity as metric.
+    """Perform k-Nearest Neighbor classification using cosine similaristy as metric.
+
     Options:
         k (int): top k features for kNN
     
@@ -80,6 +81,7 @@ def kmeans(args, train_features, train_labels, test_features, test_labels):
     
     Options:
         n (int): number of clusters used in KMeans.
+
     """
     return cluster.kmeans(args, train_features, train_labels)
 
@@ -89,6 +91,7 @@ def ensc(args, train_features, train_labels, test_features, test_labels):
     Options:
         gam (float): gamma parameter in EnSC
         tau (float): tau parameter in EnSC
+
     """
     return cluster.ensc(args, train_features, train_labels)
 
@@ -103,7 +106,9 @@ if __name__ == '__main__':
     parser.add_argument('--kmeans', help='evaluate using KMeans', action='store_true')
     parser.add_argument('--ensc', help='evaluate using Elastic Net Subspace Clustering', action='store_true')
     parser.add_argument('--epoch', type=int, default=None, help='which epoch for evaluation')
-
+    parser.add_argument('--label_batch', type=int, default=None, help='which label batch for evaluation')
+    parser.add_argument('--cpb', type=int, default=10, help='number of classes in each learning batch (default: 10)')
+    
     parser.add_argument('--k', type=int, default=5, help='top k components for kNN')
     parser.add_argument('--n', type=int, default=10, help='number of clusters for cluster (default: 10)')
     parser.add_argument('--gam', type=int, default=300, 
@@ -117,22 +122,29 @@ if __name__ == '__main__':
 
     ## load model
     params = utils.load_params(args.model_dir)
-    net, epoch = tf.load_checkpoint(args.model_dir, args.epoch, eval_=True)
+    net, epoch = tf.load_checkpoint(args.model_dir, args.epoch, eval_=True, label_batch_id=args.label_batch)
     net = net.cuda().eval()
-    
+    print("evaluate using label_batch: {}".format(args.label_batch))
     # get train features and labels
     train_transforms = tf.load_transforms('test')
     trainset = tf.load_trainset(params['data'], train_transforms, train=True, path=args.data_dir)
     if 'lcr' in params.keys(): # supervised corruption case
         trainset = tf.corrupt_labels(trainset, params['lcr'], params['lcs'])
     new_labels = trainset.targets
-    trainloader = DataLoader(trainset, batch_size=200)
+    assert (trainset.num_classes % args.cpb == 0),"Number of classes not divisible by cpb"
+    classes = np.unique(trainset.targets)
+    class_batch_num = trainset.num_classes//args.cpb
+    class_batch_list = classes.reshape(class_batch_num,args.cpb)
+    subtrainset = tf.get_subset(class_batch_list[0,:],trainset)
+
+    trainloader = DataLoader(subtrainset, batch_size=200)
     train_features, train_labels = tf.get_features(net, trainloader)
 
     # get test features and labels
     test_transforms = tf.load_transforms('test')
     testset = tf.load_trainset(params['data'], test_transforms, train=False)
-    testloader = DataLoader(testset, batch_size=200)
+    subtestset = tf.get_subset(class_batch_list[0,:],testset)
+    testloader = DataLoader(subtestset, batch_size=200)
     test_features, test_labels = tf.get_features(net, testloader)
 
     if args.svm:

@@ -1,0 +1,14 @@
+#!/bin/bash
+#SBATCH --job-name=mcr2
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=1
+#SBATCH --gres=gpu:2080ti:1
+#SBATCH --mem=32GB
+#SBATCH --time=48:00:00
+#SBATCH --partition=bharath
+
+# OPTIONAL: uncomment this if you're using an anaconda environment named <my_env_name>
+. /home/zw287/anaconda3/etc/profile.d/conda.sh
+conda activate mcr2
+
+cd $HOME/mcr2; python train_seqsupce.py --arch resnet18 --data cifar100 --cpb 10 --epo 50 --bs 1000 --lr 0.01 --lcr 0.0

@@ -80,9 +80,14 @@ def save_state(model_dir, *entries, filename='losses.csv'):
     with open(csv_path, 'a') as f:
         f.write('\n'+','.join(map(str, entries)))
 
-def save_ckpt(model_dir, net, epoch):
+def save_ckpt(model_dir, net, epoch, label_batch_id=None):
     """Save PyTorch checkpoint to ./checkpoints/ directory in model directory. """
-    torch.save(net.state_dict(), os.path.join(model_dir, 'checkpoints', 
+    if label_batch_id is not None:
+        assert isinstance(label_batch_id,int),"index of label batch has to be of type int"
+        torch.save(net.state_dict(), os.path.join(model_dir, 'checkpoints', 'labelbatch{}'.format(label_batch_id),
+        'model-epoch{}.pt'.format(epoch)))
+    else:    
+        torch.save(net.state_dict(), os.path.join(model_dir, 'checkpoints', 
         'model-epoch{}.pt'.format(epoch)))
 
 def save_labels(model_dir, labels, epoch):

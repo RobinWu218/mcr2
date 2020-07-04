@@ -6,12 +6,33 @@ import numpy as np
 import torch
 import torch.nn
 import torchvision
+from torchvision import models
 import torchvision.transforms as transforms
 from torch.utils.data import DataLoader
 
 from cluster import ElasticNetSubspaceClustering, clustering_accuracy
 import utils
 
+def load_architectures_ce(name, num_classes):
+    """Returns a network architecture for cross entropy loss.
+    
+    Parameters:
+        name (str): name of the architecture
+    
+    Returns:
+        net (torch.nn.Module)
+        
+    """
+    _name = name.lower()
+    if _name == "resnet18":
+        net = models.resnet18(pretrained=True)
+    else:
+        raise NameError("{} not found in architectures.".format(name))
+
+    num_ftrs = net.fc.in_features
+    net.fc = torch.nn.Linear(num_ftrs, num_classes)
+    net = torch.nn.DataParallel(net).cuda()
+    return net
 
 def load_architectures(name, dim):
     """Returns a network architecture.
@@ -174,7 +195,7 @@ def load_transforms(name):
     return transform
 
 
-def load_checkpoint(model_dir, epoch=None, eval_=False):
+def load_checkpoint(model_dir, epoch=None, eval_=False, label_batch_id=None):
     """Load checkpoint from model directory. Checkpoints should be stored in 
     `model_dir/checkpoints/model-epochX.ckpt`, where `X` is the epoch number.
     
@@ -188,11 +209,13 @@ def load_checkpoint(model_dir, epoch=None, eval_=False):
         epoch (int): epoch number
     
     """
+    ckpt_dir = os.path.join(model_dir, 'checkpoints')
+    if label_batch_id is not None:
+        ckpt_dir = os.path.join(ckpt_dir,'labelbatch{}'.format(label_batch_id))
     if epoch is None: # get last epoch
-        ckpt_dir = os.path.join(model_dir, 'checkpoints')
         epochs = [int(e[11:-3]) for e in os.listdir(ckpt_dir) if e[-3:] == ".pt"]
         epoch = np.sort(epochs)[-1]
-    ckpt_path = os.path.join(model_dir, 'checkpoints', 'model-epoch{}.pt'.format(epoch))
+    ckpt_path = os.path.join(ckpt_dir, 'model-epoch{}.pt'.format(epoch))
     params = utils.load_params(model_dir)
     print('Loading checkpoint: {}'.format(ckpt_path))
     state_dict = torch.load(ckpt_path)
@@ -203,7 +226,38 @@ def load_checkpoint(model_dir, epoch=None, eval_=False):
         net.eval()
     return net, epoch
 
+def load_checkpoint_ce(model_dir, num_classes, epoch=None, eval_=False, label_batch_id=None):
+    """Load checkpoint from model directory. Checkpoints should be stored in 
+    `model_dir/checkpoints/model-epochX.ckpt`, where `X` is the epoch number.
     
+    Parameters:
+        model_dir (str): path to model directory
+        epoch (int): epoch number; set to None for last available epoch
+        eval_ (bool): PyTorch evaluation mode. set to True for testing
+        
+    Returns:
+        net (torch.nn.Module): PyTorch checkpoint at `epoch`
+        epoch (int): epoch number
+    
+    """
+    ckpt_dir = os.path.join(model_dir, 'checkpoints')
+    if label_batch_id is not None:
+        ckpt_dir = os.path.join(ckpt_dir,'labelbatch{}'.format(label_batch_id))
+    if epoch is None: # get last epoch
+        epochs = [int(e[11:-3]) for e in os.listdir(ckpt_dir) if e[-3:] == ".pt"]
+        epoch = np.sort(epochs)[-1]
+    ckpt_path = os.path.join(ckpt_dir, 'model-epoch{}.pt'.format(epoch))
+    params = utils.load_params(model_dir)
+    print('Loading checkpoint: {}'.format(ckpt_path))
+    state_dict = torch.load(ckpt_path)
+    net = load_architectures_ce(params['arch'], num_classes)
+    net.load_state_dict(state_dict)
+    del state_dict
+    if eval_:
+        net.eval()
+    return net, epoch
+
+
 def get_features(net, trainloader, verbose=True):
     '''Extract all features out into one single batch. 
     
@@ -285,6 +339,18 @@ def one_hot(x, K):
     """Turn labels x into one hot vector of K classes. """
     return np.array(x[:, None] == np.arange(K)[None, :], dtype=int)
 
+def get_indices_for_label_batch(lb_batch,ds):
+    """Get all indices in a dataset for a batch of labels. """
+    res = []
+    for i in range(len(ds)):
+        if ds[i][1] in lb_batch:
+            res.append(i)
+    return res
+
+def get_subset(lb_batch,ds):
+    """Construct a subset of a dataset corresponding to a batch of labels. """
+    subds_ids = get_indices_for_label_batch(lb_batch,ds)
+    return torch.utils.data.Subset(ds, subds_ids)
 
 ## Additional Augmentations
 class GaussianBlur():
