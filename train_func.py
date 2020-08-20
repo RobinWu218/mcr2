@@ -136,7 +136,20 @@ def load_trainset(name, transform=None, train=True, path="./data/"):
             trainset.targets = trainset.labels
             return trainset
     else:
-        raise NameError("{} not found in trainset loader".format(name))
+        ds_dir = os.path.join(path,_name)
+        if not os.path.exists(ds_dir):
+            raise NameError("{} not found in trainset loader".format(name))
+        train_dir = os.path.join(ds_dir,'train')
+        val_dir = os.path.join(ds_dir,'val')
+        trainset = torchvision.datasets.ImageFolder(train_dir,transform=transform)
+        testset = torchvision.datasets.ImageFolder(val_dir,transform=transform)
+        trainset.num_classes = len(trainset.classes)
+        testset.num_classes = len(testset.classes)
+        if not train:
+            return testset
+        else:
+            # trainset.targets = trainset.labels
+            return trainset
     return trainset
 
 
@@ -152,6 +165,10 @@ def load_transforms(name):
         transform = transforms.Compose([
             transforms.RandomCrop(32, padding=8),
             transforms.RandomHorizontalFlip(),
+            transforms.ToTensor()])
+    elif _name == "transfer":
+        transform = transforms.Compose([
+            transforms.CenterCrop(32),
             transforms.ToTensor()])
     elif _name == "cifar":
         transform = transforms.Compose([
@@ -301,7 +318,7 @@ def corrupt_labels(trainset, ratio, seed):
     train_labels = np.asarray(trainset.targets)
     num_classes = np.max(train_labels) + 1
     n_train = len(train_labels)
-    n_rand = int(len(trainset.data)*ratio)
+    n_rand = int(len(trainset)*ratio)
     randomize_indices = np.random.choice(range(n_train), size=n_rand, replace=False)
     train_labels[randomize_indices] = np.random.choice(np.arange(num_classes), size=n_rand, replace=True)
     trainset.targets = train_labels

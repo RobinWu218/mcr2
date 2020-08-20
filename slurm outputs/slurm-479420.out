@@ -1,0 +1,829 @@
+Start Evaluation
+['aircraft', 'cub', 'dtd', 'isic', 'merced', 'scenes', 'ucf101', 'cifar100', 'daimlerpedcls', 'gtsrb', 'kather', 'svhn', 'bach', 'minc']
+Use pretrained network on: aircraft
+Loading checkpoint: saved_models/sup_expert_resnet18+128_aircraft_epo100_bs1000_lr0.01_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0/checkpoints/model-epoch99.pt
+Target task on: aircraft
+mcr loss: -27.585472106933594
+PCA: 0.08430843084308426
+SVD: 0.08430843084308426
+Target task on: cub
+mcr loss: -23.88278579711914
+PCA: 0.05708245243128962
+SVD: 0.05708245243128962
+Target task on: dtd
+mcr loss: -20.330284118652344
+PCA: 0.08191489361702131
+SVD: 0.08617021276595749
+Target task on: isic
+mcr loss: -1.416259765625
+PCA: 0.4080142123963679
+SVD: 0.40821160679036717
+Target task on: merced
+mcr loss: -18.860244750976562
+PCA: 0.42380952380952386
+SVD: 0.430952380952381
+Target task on: scenes
+mcr loss: -6.204120635986328
+PCA: 0.08552210121716852
+SVD: 0.08936579115951315
+Target task on: ucf101
+mcr loss: -10.880630493164062
+PCA: 0.05219677055951932
+SVD: 0.05219677055951932
+Files already downloaded and verified
+Target task on: cifar100
+Files already downloaded and verified
+mcr loss: -38.66115951538086
+PCA: 0.14780000000000004
+SVD: 0.1471
+Target task on: daimlerpedcls
+mcr loss: 0.0
+PCA: 0.7670408163265307
+SVD: 0.7844897959183673
+Target task on: gtsrb
+mcr loss: -1.8809356689453125
+PCA: 0.8046171171171171
+SVD: 0.7956081081081081
+Target task on: kather
+mcr loss: -3.8133583068847656
+PCA: 0.6619999999999999
+SVD: 0.654
+Target task on: svhn
+mcr loss: 0.0
+PCA: 0.320794647733479
+SVD: 0.3191561987984708
+Target task on: bach
+PCA: 0.4125
+SVD: 0.375
+Target task on: minc
+mcr loss: 0.0
+PCA: 0.2121739130434782
+SVD: 0.21843478260869564
+Use pretrained network on: cub
+Loading checkpoint: saved_models/sup_expert_resnet18+128_cub_epo100_bs1000_lr0.01_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0/checkpoints/model-epoch99.pt
+Target task on: aircraft
+mcr loss: -17.975549697875977
+PCA: 0.06300630063006296
+SVD: 0.06180618061806176
+Target task on: cub
+mcr loss: -29.328405380249023
+PCA: 0.06046511627906981
+SVD: 0.062156448202959846
+Target task on: dtd
+mcr loss: -25.69864273071289
+PCA: 0.10319148936170208
+SVD: 0.10265957446808516
+Target task on: isic
+mcr loss: -1.8636093139648438
+PCA: 0.4058428740623766
+SVD: 0.3981444926964074
+Target task on: merced
+mcr loss: -21.429973602294922
+PCA: 0.43333333333333335
+SVD: 0.42380952380952386
+Target task on: scenes
+mcr loss: -6.590003967285156
+PCA: 0.0839205637411915
+SVD: 0.08103779628443308
+Target task on: ucf101
+mcr loss: -10.047966003417969
+PCA: 0.0473150582050319
+SVD: 0.04581299286518958
+Files already downloaded and verified
+Target task on: cifar100
+Files already downloaded and verified
+mcr loss: -42.01765060424805
+PCA: 0.15669999999999995
+SVD: 0.15290000000000004
+Target task on: daimlerpedcls
+mcr loss: 0.0
+PCA: 0.8025510204081633
+SVD: 0.7976530612244898
+Target task on: gtsrb
+mcr loss: -1.7585792541503906
+PCA: 0.6818693693693694
+SVD: 0.6685435435435436
+Target task on: kather
+mcr loss: -0.6038007736206055
+PCA: 0.5880000000000001
+SVD: 0.579
+Target task on: svhn
+mcr loss: 0.0
+PCA: 0.22706171490988536
+SVD: 0.22235117422173678
+Target task on: bach
+PCA: 0.4375
+SVD: 0.44999999999999996
+Target task on: minc
+mcr loss: 0.0
+PCA: 0.21913043478260874
+SVD: 0.21947826086956523
+Use pretrained network on: dtd
+Loading checkpoint: saved_models/sup_expert_resnet18+128_dtd_epo100_bs1000_lr0.01_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0/checkpoints/model-epoch99.pt
+Target task on: aircraft
+mcr loss: -19.010034561157227
+PCA: 0.0651065106510651
+SVD: 0.06450645064506455
+Target task on: cub
+mcr loss: -23.45285415649414
+PCA: 0.059196617336152224
+SVD: 0.05792811839323464
+Target task on: dtd
+mcr loss: -31.818553924560547
+PCA: 0.12606382978723407
+SVD: 0.13031914893617025
+Target task on: isic
+mcr loss: -2.0965099334716797
+PCA: 0.3578760363205685
+SVD: 0.3529411764705882
+Target task on: merced
+mcr loss: -20.507848739624023
+PCA: 0.5023809523809524
+SVD: 0.4928571428571429
+Target task on: scenes
+mcr loss: -6.811794281005859
+PCA: 0.09256886611146697
+SVD: 0.08904548366431775
+Target task on: ucf101
+mcr loss: -9.694587707519531
+PCA: 0.04994367254975596
+SVD: 0.05219677055951932
+Files already downloaded and verified
+Target task on: cifar100
+Files already downloaded and verified
+mcr loss: -40.683799743652344
+PCA: 0.16379999999999995
+SVD: 0.16410000000000002
+Target task on: daimlerpedcls
+mcr loss: 0.0
+PCA: 0.8074489795918367
+SVD: 0.810204081632653
+Target task on: gtsrb
+mcr loss: -1.8918228149414062
+PCA: 0.714527027027027
+SVD: 0.7073948948948949
+Target task on: kather
+mcr loss: -3.846853256225586
+PCA: 0.7090000000000001
+SVD: 0.7010000000000001
+Target task on: svhn
+mcr loss: 0.0
+PCA: 0.2034407427635172
+SVD: 0.20494265428727476
+Target task on: bach
+PCA: 0.3125
+SVD: 0.36250000000000004
+Target task on: minc
+mcr loss: 0.0
+PCA: 0.2473043478260869
+SVD: 0.24626086956521742
+Use pretrained network on: isic
+Loading checkpoint: saved_models/sup_expert_resnet18+128_isic_epo100_bs1000_lr0.01_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0/checkpoints/model-epoch99.pt
+Target task on: aircraft
+mcr loss: -2.9972763061523438
+PCA: 0.06840684068406844
+SVD: 0.06600660066006603
+Target task on: cub
+mcr loss: -5.52510929107666
+PCA: 0.04228329809725162
+SVD: 0.04312896405919664
+Target task on: dtd
+mcr loss: -10.775806427001953
+PCA: 0.0925531914893617
+SVD: 0.09361702127659577
+Target task on: isic
+mcr loss: -4.071132659912109
+PCA: 0.40051322542439793
+SVD: 0.40327674694038684
+Target task on: merced
+mcr loss: -4.158657073974609
+PCA: 0.419047619047619
+SVD: 0.4214285714285714
+Target task on: scenes
+mcr loss: -2.738191604614258
+PCA: 0.0474055092889174
+SVD: 0.048366431774503504
+Target task on: ucf101
+mcr loss: -1.8939552307128906
+PCA: 0.03004130679684569
+SVD: 0.032294404806609056
+Files already downloaded and verified
+Target task on: cifar100
+Files already downloaded and verified
+mcr loss: -12.877739906311035
+PCA: 0.12
+SVD: 0.12039999999999995
+Target task on: daimlerpedcls
+mcr loss: 0.0
+PCA: 0.8033673469387755
+SVD: 0.7955102040816326
+Target task on: gtsrb
+mcr loss: -0.6319637298583984
+PCA: 0.6011636636636637
+SVD: 0.5972222222222222
+Target task on: kather
+mcr loss: -3.1841297149658203
+PCA: 0.62
+SVD: 0.611
+Target task on: svhn
+mcr loss: 0.0
+PCA: 0.19163025669033318
+SVD: 0.1882850901146914
+Target task on: bach
+PCA: 0.475
+SVD: 0.5
+Target task on: minc
+mcr loss: 0.0
+PCA: 0.20660869565217388
+SVD: 0.20660869565217388
+Use pretrained network on: merced
+Loading checkpoint: saved_models/sup_expert_resnet18+128_merced_epo100_bs1000_lr0.01_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0/checkpoints/model-epoch99.pt
+Target task on: aircraft
+mcr loss: -9.353164672851562
+PCA: 0.05610561056105612
+SVD: 0.05730573057305732
+Target task on: cub
+mcr loss: -16.95864486694336
+PCA: 0.04693446088794928
+SVD: 0.047357293868921735
+Target task on: dtd
+mcr loss: -17.257917404174805
+PCA: 0.09361702127659577
+SVD: 0.0925531914893617
+Target task on: isic
+mcr loss: -1.5020217895507812
+PCA: 0.3778128701144887
+SVD: 0.3778128701144887
+Target task on: merced
+mcr loss: -25.19277000427246
+PCA: 0.5166666666666666
+SVD: 0.5142857142857142
+Target task on: scenes
+mcr loss: -4.2942962646484375
+PCA: 0.06950672645739908
+SVD: 0.06310057655349133
+Target task on: ucf101
+mcr loss: -5.9485015869140625
+PCA: 0.039053698835899375
+SVD: 0.040180247840781114
+Files already downloaded and verified
+Target task on: cifar100
+Files already downloaded and verified
+mcr loss: -27.399208068847656
+PCA: 0.132
+SVD: 0.13239999999999996
+Target task on: daimlerpedcls
+mcr loss: 0.0
+PCA: 0.7705102040816326
+SVD: 0.7436734693877551
+Target task on: gtsrb
+mcr loss: -1.2918891906738281
+PCA: 0.6677927927927928
+SVD: 0.6621621621621622
+Target task on: kather
+mcr loss: -3.5667428970336914
+PCA: 0.698
+SVD: 0.702
+Target task on: svhn
+mcr loss: 0.0
+PCA: 0.17244675040961222
+SVD: 0.16746313489896236
+Target task on: bach
+PCA: 0.44999999999999996
+SVD: 0.48750000000000004
+Target task on: minc
+mcr loss: 0.0
+PCA: 0.2048695652173913
+SVD: 0.20069565217391305
+Use pretrained network on: scenes
+Loading checkpoint: saved_models/sup_expert_resnet18+128_scenes_epo100_bs1000_lr0.01_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0/checkpoints/model-epoch99.pt
+Target task on: aircraft
+mcr loss: -11.189020156860352
+PCA: 0.0588058805880588
+SVD: 0.05460546054605464
+Target task on: cub
+mcr loss: -24.17911148071289
+PCA: 0.05581395348837215
+SVD: 0.054122621564482
+Target task on: dtd
+mcr loss: -23.923622131347656
+PCA: 0.13191489361702124
+SVD: 0.13244680851063828
+Target task on: isic
+mcr loss: -1.3716392517089844
+PCA: 0.3993288590604027
+SVD: 0.4013028030003948
+Target task on: merced
+mcr loss: -19.601144790649414
+PCA: 0.5047619047619047
+SVD: 0.4904761904761905
+Target task on: scenes
+mcr loss: -11.848873138427734
+PCA: 0.15150544522741827
+SVD: 0.1550288276745676
+Target task on: ucf101
+mcr loss: -9.628608703613281
+PCA: 0.06196019526849417
+SVD: 0.06346226060833648
+Files already downloaded and verified
+Target task on: cifar100
+Files already downloaded and verified
+mcr loss: -42.752159118652344
+PCA: 0.14490000000000003
+SVD: 0.14449999999999996
+Target task on: daimlerpedcls
+mcr loss: 0.0
+PCA: 0.8231632653061225
+SVD: 0.8229591836734693
+Target task on: gtsrb
+mcr loss: -1.69244384765625
+PCA: 0.5989114114114114
+SVD: 0.5940315315315315
+Target task on: kather
+mcr loss: -1.579817771911621
+PCA: 0.563
+SVD: 0.5569999999999999
+Target task on: svhn
+mcr loss: 0.0
+PCA: 0.2476788640087384
+SVD: 0.2474740578918624
+Target task on: bach
+PCA: 0.4
+SVD: 0.4625
+Target task on: minc
+mcr loss: -3.814697265625e-06
+PCA: 0.25182608695652176
+SVD: 0.25217391304347825
+Use pretrained network on: ucf101
+Loading checkpoint: saved_models/sup_expert_resnet18+128_ucf101_epo100_bs1000_lr0.01_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0/checkpoints/model-epoch99.pt
+Target task on: aircraft
+mcr loss: -8.459163665771484
+PCA: 0.06150615061506148
+SVD: 0.05850585058505853
+Target task on: cub
+mcr loss: -14.5858154296875
+PCA: 0.04439746300211411
+SVD: 0.043551797040169093
+Target task on: dtd
+mcr loss: -18.591312408447266
+PCA: 0.0989361702127659
+SVD: 0.09680851063829787
+Target task on: isic
+mcr loss: -2.0498924255371094
+PCA: 0.41255428345834977
+SVD: 0.40485590209238054
+Target task on: merced
+mcr loss: -21.73271369934082
+PCA: 0.40476190476190477
+SVD: 0.38809523809523805
+Target task on: scenes
+mcr loss: -4.045368194580078
+PCA: 0.07623318385650224
+SVD: 0.07751441383728375
+Target task on: ucf101
+mcr loss: -21.690818786621094
+PCA: 0.10214044310927528
+SVD: 0.09876079609463007
+Files already downloaded and verified
+Target task on: cifar100
+Files already downloaded and verified
+mcr loss: -26.05413818359375
+PCA: 0.12209999999999999
+SVD: 0.12409999999999999
+Target task on: daimlerpedcls
+mcr loss: 0.0
+PCA: 0.7981632653061225
+SVD: 0.7857142857142857
+Target task on: gtsrb
+mcr loss: -1.121469497680664
+PCA: 0.5910285285285286
+SVD: 0.5835210210210211
+Target task on: kather
+mcr loss: -3.1836509704589844
+PCA: 0.605
+SVD: 0.612
+Target task on: svhn
+mcr loss: 0.0
+PCA: 0.3501501911523758
+SVD: 0.3503549972692518
+Target task on: bach
+PCA: 0.36250000000000004
+SVD: 0.4
+Target task on: minc
+mcr loss: 0.0
+PCA: 0.2128695652173913
+SVD: 0.20939130434782605
+Use pretrained network on: cifar100
+Loading checkpoint: saved_models/sup_expert_resnet18+128_cifar100_epo100_bs1000_lr0.01_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0/checkpoints/model-epoch99.pt
+Target task on: aircraft
+mcr loss: -13.84218978881836
+PCA: 0.06360636063606362
+SVD: 0.06210621062106214
+Target task on: cub
+mcr loss: -27.367042541503906
+PCA: 0.05877378435517966
+SVD: 0.05877378435517966
+Target task on: dtd
+mcr loss: -24.75016975402832
+PCA: 0.08563829787234045
+SVD: 0.07659574468085106
+Target task on: isic
+mcr loss: -1.2342147827148438
+PCA: 0.37208843268851166
+SVD: 0.3760363205684959
+Target task on: merced
+mcr loss: -19.527706146240234
+PCA: 0.39761904761904765
+SVD: 0.4023809523809524
+Target task on: scenes
+mcr loss: -7.856052398681641
+PCA: 0.07847533632286996
+SVD: 0.07559256886611143
+Target task on: ucf101
+mcr loss: -8.598590850830078
+PCA: 0.04693954187007132
+SVD: 0.045437476530229115
+Files already downloaded and verified
+Target task on: cifar100
+Files already downloaded and verified
+mcr loss: -48.57413101196289
+PCA: 0.19810000000000005
+SVD: 0.20099999999999996
+Target task on: daimlerpedcls
+mcr loss: 0.0
+PCA: 0.6558163265306123
+SVD: 0.6657142857142857
+Target task on: gtsrb
+mcr loss: -2.1127357482910156
+PCA: 0.7708333333333334
+SVD: 0.765015015015015
+Target task on: kather
+mcr loss: -1.0277099609375
+PCA: 0.471
+SVD: 0.479
+Target task on: svhn
+mcr loss: 0.0
+PCA: 0.21402239213544516
+SVD: 0.21593391589295463
+Target task on: bach
+PCA: 0.4
+SVD: 0.4125
+Target task on: minc
+mcr loss: 0.0
+PCA: 0.223304347826087
+SVD: 0.2215652173913043
+Use pretrained network on: daimlerpedcls
+Loading checkpoint: saved_models/sup_expert_resnet18+128_daimlerpedcls_epo100_bs1000_lr0.01_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0/checkpoints/model-epoch99.pt
+Target task on: aircraft
+mcr loss: -8.934200286865234
+PCA: 0.030003000300030003
+SVD: 0.03060306030603055
+Target task on: cub
+mcr loss: -11.582534790039062
+PCA: 0.025369978858350906
+SVD: 0.027061310782241055
+Target task on: dtd
+mcr loss: -10.698905944824219
+PCA: 0.08138297872340428
+SVD: 0.07978723404255317
+Target task on: isic
+mcr loss: -0.7743606567382812
+PCA: 0.41136991709435455
+SVD: 0.41669956573233324
+Target task on: merced
+mcr loss: -9.950981140136719
+PCA: 0.24523809523809526
+SVD: 0.23809523809523814
+Target task on: scenes
+mcr loss: -1.9405517578125
+PCA: 0.049967969250480415
+SVD: 0.05092889173606663
+Target task on: ucf101
+mcr loss: -7.557792663574219
+PCA: 0.02478407810739769
+SVD: 0.025910627112279427
+Files already downloaded and verified
+Target task on: cifar100
+Files already downloaded and verified
+mcr loss: -16.482498168945312
+PCA: 0.06320000000000003
+SVD: 0.06310000000000004
+Target task on: daimlerpedcls
+mcr loss: 0.0
+PCA: 0.7498979591836734
+SVD: 0.7380612244897959
+Target task on: gtsrb
+mcr loss: -0.7956047058105469
+PCA: 0.6405780780780781
+SVD: 0.6398273273273274
+Target task on: kather
+mcr loss: -2.2588882446289062
+PCA: 0.49
+SVD: 0.474
+Target task on: svhn
+mcr loss: 0.0
+PCA: 0.2262424904423812
+SVD: 0.23402512288367017
+Target task on: bach
+PCA: 0.2875
+SVD: 0.26249999999999996
+Target task on: minc
+mcr loss: 0.0
+PCA: 0.1627826086956522
+SVD: 0.16730434782608694
+Use pretrained network on: gtsrb
+Loading checkpoint: saved_models/sup_expert_resnet18+128_gtsrb_epo100_bs1000_lr0.01_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0/checkpoints/model-epoch99.pt
+Target task on: aircraft
+mcr loss: -8.3615083694458
+PCA: 0.045004500450045004
+SVD: 0.04560456045604555
+Target task on: cub
+mcr loss: -11.544672012329102
+PCA: 0.041014799154334036
+SVD: 0.03678646934460883
+Target task on: dtd
+mcr loss: -12.65365982055664
+PCA: 0.10691489361702122
+SVD: 0.10478723404255319
+Target task on: isic
+mcr loss: -1.4407501220703125
+PCA: 0.29885511251480457
+SVD: 0.3055665219107777
+Target task on: merced
+mcr loss: -5.90651798248291
+PCA: 0.419047619047619
+SVD: 0.4214285714285714
+Target task on: scenes
+mcr loss: -3.693643569946289
+PCA: 0.04356181934657266
+SVD: 0.044522741832158874
+Target task on: ucf101
+mcr loss: -3.2830352783203125
+PCA: 0.03004130679684569
+SVD: 0.033045437476530215
+Files already downloaded and verified
+Target task on: cifar100
+Files already downloaded and verified
+mcr loss: -19.22101402282715
+PCA: 0.09970000000000001
+SVD: 0.09899999999999998
+Target task on: daimlerpedcls
+mcr loss: 0.0
+PCA: 0.6737755102040817
+SVD: 0.613265306122449
+Target task on: gtsrb
+mcr loss: -1.4366455078125
+PCA: 0.40878378378378377
+SVD: 0.4029654654654654
+Target task on: kather
+mcr loss: -1.8783845901489258
+PCA: 0.675
+SVD: 0.673
+Target task on: svhn
+mcr loss: 0.0
+PCA: 0.11605679956308024
+SVD: 0.11353085745494262
+Target task on: bach
+PCA: 0.4625
+SVD: 0.5
+Target task on: minc
+mcr loss: 0.0
+PCA: 0.18086956521739128
+SVD: 0.1784347826086956
+Use pretrained network on: kather
+Loading checkpoint: saved_models/sup_expert_resnet18+128_kather_epo100_bs1000_lr0.01_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0/checkpoints/model-epoch99.pt
+Target task on: aircraft
+mcr loss: -2.670621871948242
+PCA: 0.050105010501050096
+SVD: 0.04770477047704769
+Target task on: cub
+mcr loss: -4.7806396484375
+PCA: 0.03298097251585619
+SVD: 0.03128964059196615
+Target task on: dtd
+mcr loss: -6.915071487426758
+PCA: 0.08989361702127663
+SVD: 0.08723404255319145
+Target task on: isic
+mcr loss: -1.6089763641357422
+PCA: 0.3947887879984209
+SVD: 0.3821555467824713
+Target task on: merced
+mcr loss: -5.068363189697266
+PCA: 0.38809523809523805
+SVD: 0.38809523809523805
+Target task on: scenes
+mcr loss: -1.6795024871826172
+PCA: 0.05797565663036519
+SVD: 0.056694426649583574
+Target task on: ucf101
+mcr loss: -2.264158248901367
+PCA: 0.033045437476530215
+SVD: 0.0368006008261359
+Files already downloaded and verified
+Target task on: cifar100
+Files already downloaded and verified
+mcr loss: -10.863256454467773
+PCA: 0.10750000000000004
+SVD: 0.11050000000000004
+Target task on: daimlerpedcls
+mcr loss: 0.0
+PCA: 0.7427551020408163
+SVD: 0.7129591836734694
+Target task on: gtsrb
+mcr loss: -0.40610313415527344
+PCA: 0.5018768768768769
+SVD: 0.4878003003003003
+Target task on: kather
+mcr loss: -7.759870529174805
+PCA: 0.626
+SVD: 0.627
+Target task on: svhn
+mcr loss: 0.0
+PCA: 0.20978973238667398
+SVD: 0.20869743309666844
+Target task on: bach
+PCA: 0.4
+SVD: 0.375
+Target task on: minc
+mcr loss: 0.0
+PCA: 0.1874782608695652
+SVD: 0.18678260869565222
+Use pretrained network on: svhn
+Loading checkpoint: saved_models/sup_expert_resnet18+128_svhn_epo100_bs1000_lr0.01_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0/checkpoints/model-epoch99.pt
+Target task on: aircraft
+mcr loss: -7.52570915222168
+PCA: 0.0675067506750675
+SVD: 0.06330633063306335
+Target task on: cub
+mcr loss: -15.345804214477539
+PCA: 0.03551797040169136
+SVD: 0.03509513742071879
+Target task on: dtd
+mcr loss: -16.093276977539062
+PCA: 0.09999999999999998
+SVD: 0.10053191489361701
+Target task on: isic
+mcr loss: -1.1345977783203125
+PCA: 0.3971575207264114
+SVD: 0.4018949861823924
+Target task on: merced
+mcr loss: -13.900365829467773
+PCA: 0.40476190476190477
+SVD: 0.37857142857142856
+Target task on: scenes
+mcr loss: -3.5551300048828125
+PCA: 0.07943625880845617
+SVD: 0.07815502882767456
+Target task on: ucf101
+mcr loss: -7.641502380371094
+PCA: 0.07660533233195643
+SVD: 0.07209913631242959
+Files already downloaded and verified
+Target task on: cifar100
+Files already downloaded and verified
+mcr loss: -28.0782527923584
+PCA: 0.1422
+SVD: 0.1401
+Target task on: daimlerpedcls
+mcr loss: 0.0
+PCA: 0.7853061224489796
+SVD: 0.7978571428571428
+Target task on: gtsrb
+mcr loss: -1.7890472412109375
+PCA: 0.9065315315315315
+SVD: 0.9031531531531531
+Target task on: kather
+mcr loss: -3.194141387939453
+PCA: 0.577
+SVD: 0.573
+Target task on: svhn
+mcr loss: 0.0
+PCA: 0.5729109776078646
+SVD: 0.573184052430366
+Target task on: bach
+PCA: 0.375
+SVD: 0.36250000000000004
+Target task on: minc
+mcr loss: 0.0
+PCA: 0.2139130434782609
+SVD: 0.2132173913043478
+Use pretrained network on: bach
+Loading checkpoint: saved_models/sup_expert_resnet18+128_bach_epo100_bs1000_lr0.01_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0/checkpoints/model-epoch99.pt
+Target task on: aircraft
+mcr loss: -0.004144191741943359
+PCA: 0.0738073807380738
+SVD: 0.0726072607260726
+Target task on: cub
+mcr loss: -0.021654844284057617
+PCA: 0.03382663847780132
+SVD: 0.03382663847780132
+Target task on: dtd
+mcr loss: -0.031043052673339844
+PCA: 0.10425531914893615
+SVD: 0.09680851063829787
+Target task on: isic
+mcr loss: -0.0008788108825683594
+PCA: 0.40446111330438217
+SVD: 0.398736675878405
+Target task on: merced
+mcr loss: -0.05695605278015137
+PCA: 0.40476190476190477
+SVD: 0.36904761904761907
+Target task on: scenes
+mcr loss: -0.009530305862426758
+PCA: 0.08071748878923768
+SVD: 0.07527226137091603
+Target task on: ucf101
+mcr loss: -0.0014476776123046875
+PCA: 0.06120916259857301
+SVD: 0.0597070972587308
+Files already downloaded and verified
+Target task on: cifar100
+Files already downloaded and verified
+mcr loss: -0.04780125617980957
+PCA: 0.1472
+SVD: 0.14300000000000002
+Target task on: daimlerpedcls
+mcr loss: 0.0
+PCA: 0.5771428571428572
+SVD: 0.5852040816326531
+Target task on: gtsrb
+mcr loss: -0.0034542083740234375
+PCA: 0.90503003003003
+SVD: 0.9029654654654655
+Target task on: kather
+mcr loss: -0.051460981369018555
+PCA: 0.589
+SVD: 0.5589999999999999
+Target task on: svhn
+mcr loss: 0.0
+PCA: 0.5300382304751502
+SVD: 0.531198798470781
+Target task on: bach
+PCA: 0.30000000000000004
+SVD: 0.25
+Target task on: minc
+mcr loss: 0.0
+PCA: 0.2045217391304348
+SVD: 0.20173913043478264
+Use pretrained network on: minc
+Loading checkpoint: saved_models/sup_expert_resnet18+128_minc_epo100_bs1000_lr0.01_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0/checkpoints/model-epoch99.pt
+Target task on: aircraft
+mcr loss: -7.58155632019043
+PCA: 0.040804080408040844
+SVD: 0.041704170417041664
+Target task on: cub
+mcr loss: -13.670841217041016
+PCA: 0.03763213530655396
+SVD: 0.03763213530655396
+Target task on: dtd
+mcr loss: -15.847078323364258
+PCA: 0.09946808510638294
+SVD: 0.10478723404255319
+Target task on: isic
+mcr loss: -1.6040306091308594
+PCA: 0.37307540465850775
+SVD: 0.3695223055665219
+Target task on: merced
+mcr loss: -14.52785873413086
+PCA: 0.35
+SVD: 0.3380952380952381
+Target task on: scenes
+mcr loss: -4.760614395141602
+PCA: 0.06278026905829592
+SVD: 0.06149903907751442
+Target task on: ucf101
+mcr loss: -5.656061172485352
+PCA: 0.038678182500938796
+SVD: 0.0420578295155839
+Files already downloaded and verified
+Target task on: cifar100
+Files already downloaded and verified
+mcr loss: -23.018917083740234
+PCA: 0.1199
+SVD: 0.11980000000000002
+Target task on: daimlerpedcls
+mcr loss: 0.0
+PCA: 0.8323469387755102
+SVD: 0.8022448979591836
+Target task on: gtsrb
+mcr loss: -0.9414749145507812
+PCA: 0.5478603603603603
+SVD: 0.5313438438438438
+Target task on: kather
+mcr loss: -1.211402416229248
+PCA: 0.526
+SVD: 0.525
+Target task on: svhn
+mcr loss: 0.0
+PCA: 0.190606226105953
+SVD: 0.19422446750409617
+Target task on: bach
+PCA: 0.44999999999999996
+SVD: 0.44999999999999996
+Target task on: minc
+mcr loss: 0.0
+PCA: 0.24173913043478257
+SVD: 0.24208695652173917
+evaluation completed

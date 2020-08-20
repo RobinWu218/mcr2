@@ -39,7 +39,7 @@ def knn(args, train_features, train_labels, test_features, test_labels):
     return acc
 
 
-def nearsub(args, train_features, train_labels, test_features, test_labels):
+def nearsub(args, train_features, train_labels, test_features, test_labels, classes_num=None):
     """Perform nearest subspace classification.
     
     Options:
@@ -49,6 +49,8 @@ def nearsub(args, train_features, train_labels, test_features, test_labels):
     scores_pca = []
     scores_svd = []
     num_classes = train_labels.numpy().max() + 1 # should be correct most of the time
+    if classes_num is not None:
+        num_classes = classes_num
     features_sort, _ = utils.sort_dataset(train_features.numpy(), train_labels.numpy(), 
                                           num_classes=num_classes, stack=False)
     fd = features_sort[0].shape[1]
@@ -95,8 +97,6 @@ def ensc(args, train_features, train_labels, test_features, test_labels):
     """
     return cluster.ensc(args, train_features, train_labels)
 
-
-
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Evaluation')
     parser.add_argument('--model_dir', type=str, help='base directory for saving PyTorch model.')
@@ -122,38 +122,87 @@ if __name__ == '__main__':
 
     ## load model
     params = utils.load_params(args.model_dir)
-    net, epoch = tf.load_checkpoint(args.model_dir, args.epoch, eval_=True, label_batch_id=args.label_batch)
-    net = net.cuda().eval()
-    print("evaluate using label_batch: {}".format(args.label_batch))
-    # get train features and labels
     train_transforms = tf.load_transforms('test')
     trainset = tf.load_trainset(params['data'], train_transforms, train=True, path=args.data_dir)
-    if 'lcr' in params.keys(): # supervised corruption case
-        trainset = tf.corrupt_labels(trainset, params['lcr'], params['lcs'])
-    new_labels = trainset.targets
+    test_transforms = tf.load_transforms('test')
+    testset = tf.load_trainset(params['data'], test_transforms, train=False)
     assert (trainset.num_classes % args.cpb == 0),"Number of classes not divisible by cpb"
     classes = np.unique(trainset.targets)
     class_batch_num = trainset.num_classes//args.cpb
+    
+    if 'lcr' in params.keys(): # supervised corruption case
+        trainset = tf.corrupt_labels(trainset, params['lcr'], params['lcs'])
+    new_labels = trainset.targets
     class_batch_list = classes.reshape(class_batch_num,args.cpb)
-    subtrainset = tf.get_subset(class_batch_list[0,:],trainset)
 
-    trainloader = DataLoader(subtrainset, batch_size=200)
-    train_features, train_labels = tf.get_features(net, trainloader)
+    for label_batch_id in range(class_batch_num):
+        net, epoch = tf.load_checkpoint(args.model_dir, args.epoch, eval_=True, label_batch_id=label_batch_id)
+        net = net.cuda().eval()
+        print("Learning Session: {}".format(label_batch_id))
+        # get train features and labels
+        accs = []
+        for task_id in range(label_batch_id+1):
+            print("Currently evaluating on Task id: {}".format(task_id))
+            subtrainset = tf.get_subset(class_batch_list[:task_id+1,:].flatten(),trainset)
+            # subtrainset = tf.get_subset(class_batch_list[task_id,:],trainset)
+            # print("subset train size: {}".format(len(subtrainset)))
+            trainloader = DataLoader(subtrainset, batch_size=200)
+            train_features, train_labels = tf.get_features(net, trainloader)
+            # print("train feature size: {}".format(train_features.numpy().shape))
+            # get test features and labels
+            subtestset = tf.get_subset(class_batch_list[task_id,:],testset)
+            # print("subset test size: {}".format(len(subtestset)))
+            testloader = DataLoader(subtestset, batch_size=200)
+            test_features, test_labels = tf.get_features(net, testloader)
+            # print("test feature size: {}".format(test_features.numpy().shape))
 
-    # get test features and labels
-    test_transforms = tf.load_transforms('test')
-    testset = tf.load_trainset(params['data'], test_transforms, train=False)
-    subtestset = tf.get_subset(class_batch_list[0,:],testset)
-    testloader = DataLoader(subtestset, batch_size=200)
-    test_features, test_labels = tf.get_features(net, testloader)
+            # test_labels = test_labels % args.cpb
+            # train_labels = train_labels % args.cpb
+            if args.svm:
+                accs.append(svm(args, train_features, train_labels, test_features, test_labels)[0])
+            if args.knn:
+                accs.append(knn(args, train_features, train_labels, test_features, test_labels))
+            if args.nearsub:
+                accs.append(nearsub(args, train_features, train_labels, test_features, test_labels))
+            if args.kmeans:
+                accs.append(kmeans(args, train_features, train_labels))
+            if args.ensc:
+                accs.append(ensc(args, train_features, train_labels))
+        
+        print("Average Incremental Accuracy: {}".format(np.mean(np.array(accs))))
 
-    if args.svm:
-        svm(args, train_features, train_labels, test_features, test_labels)
-    if args.knn:
-        knn(args, train_features, train_labels, test_features, test_labels)
-    if args.nearsub:
-        nearsub(args, train_features, train_labels, test_features, test_labels)
-    if args.kmeans:
-        kmeans(args, train_features, train_labels)
-    if args.ensc:
-        ensc(args, train_features, train_labels)
+    
+    # net, epoch = tf.load_checkpoint(args.model_dir, args.epoch, eval_=True, label_batch_id=0)
+    # net = net.cuda().eval()
+    # print("Learning Session: {}".format(0))
+    # # get train features and labels
+    # accs = []
+    # for task_id in range(class_batch_num):
+    #     print("Currently evaluating on Task id: {}".format(task_id))
+    #     subtrainset = tf.get_subset(class_batch_list[:task_id+1,:].flatten(),trainset)
+    #     # subtrainset = tf.get_subset(class_batch_list[task_id,:],trainset)
+    #     # print("subset train size: {}".format(len(subtrainset)))
+    #     trainloader = DataLoader(subtrainset, batch_size=200)
+    #     train_features, train_labels = tf.get_features(net, trainloader)
+    #     # print("train feature size: {}".format(train_features.numpy().shape))
+    #     # get test features and labels
+    #     subtestset = tf.get_subset(class_batch_list[task_id,:],testset)
+    #     # print("subset test size: {}".format(len(subtestset)))
+    #     testloader = DataLoader(subtestset, batch_size=200)
+    #     test_features, test_labels = tf.get_features(net, testloader)
+    #     # print("test feature size: {}".format(test_features.numpy().shape))
+
+    #     # test_labels = test_labels % args.cpb
+    #     # train_labels = train_labels % args.cpb
+    #     if args.svm:
+    #         accs.append(svm(args, train_features, train_labels, test_features, test_labels)[0])
+    #     if args.knn:
+    #         accs.append(knn(args, train_features, train_labels, test_features, test_labels))
+    #     if args.nearsub:
+    #         accs.append(nearsub(args, train_features, train_labels, test_features, test_labels))
+    #     if args.kmeans:
+    #         accs.append(kmeans(args, train_features, train_labels))
+    #     if args.ensc:
+    #         accs.append(ensc(args, train_features, train_labels))
+    
+    # print("Average Incremental Accuracy: {}".format(np.mean(np.array(accs))))

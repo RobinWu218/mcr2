@@ -19,8 +19,9 @@ def sort_dataset(data, labels, num_classes=10, stack=False):
 
     """
     sorted_data = [[] for _ in range(num_classes)]
+    min_lbl = np.min(labels)
     for i, lbl in enumerate(labels):
-        sorted_data[lbl].append(data[i])
+        sorted_data[lbl-min_lbl].append(data[i])
     sorted_data = [np.stack(class_data) for class_data in sorted_data]
     sorted_labels = [np.repeat(i, (len(sorted_data[i]))) for i in range(num_classes)]
     if stack:

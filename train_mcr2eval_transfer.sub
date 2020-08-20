@@ -3,7 +3,7 @@
 #SBATCH --nodes=1
 #SBATCH --cpus-per-task=1
 #SBATCH --gres=gpu:2080ti:1
-#SBATCH --mem=16GB
+#SBATCH --mem=70GB
 #SBATCH --time=48:00:00
 #SBATCH --partition=default_gpu
 
@@ -11,4 +11,4 @@
 . /home/zw287/anaconda3/etc/profile.d/conda.sh
 conda activate mcr2
 
-cd $HOME/mcr2; python evaluate_seq.py --nearsub --cpb 10 --model_dir saved_models/seqsup_resnet18+128_cifar100_cpb10_epo200_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0
+cd $HOME/mcr2; python evaluate_transfer_learning.py --nearsub --n_comp 25 --model_dir saved_models/sup_expert_resnet18+128_{}_epo100_bs1000_lr0.01_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0 --data_dir /share/bharath/zw287/datasets/my_deca
