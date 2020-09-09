@@ -1,0 +1,73 @@
+Start Evaluation on expand_only pretrained networks
+Use pretrained network on: aircraft
+Loading checkpoint: saved_models/finetune/expand_only/cub/sup_finetune_resnet18+128_aircraft_epo100_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0/checkpoints/model-epoch99.pt
+Target task on: cub
+PCA: 0.03340380549682875
+SVD: 0.032558139534883734
+Use pretrained network on: dtd
+Loading checkpoint: saved_models/finetune/expand_only/cub/sup_finetune_resnet18+128_dtd_epo100_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0/checkpoints/model-epoch99.pt
+Target task on: cub
+PCA: 0.024524312896405887
+SVD: 0.024101479915433432
+Use pretrained network on: isic
+Loading checkpoint: saved_models/finetune/expand_only/cub/sup_finetune_resnet18+128_isic_epo100_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0/checkpoints/model-epoch99.pt
+Target task on: cub
+PCA: 0.013953488372092981
+SVD: 0.012684989429175508
+Use pretrained network on: merced
+Loading checkpoint: saved_models/finetune/expand_only/cub/sup_finetune_resnet18+128_merced_epo100_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0/checkpoints/model-epoch99.pt
+Target task on: cub
+PCA: 0.02579281183932347
+SVD: 0.026215644820296036
+Use pretrained network on: scenes
+Loading checkpoint: saved_models/finetune/expand_only/cub/sup_finetune_resnet18+128_scenes_epo100_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0/checkpoints/model-epoch99.pt
+Target task on: cub
+PCA: 0.023678646934460867
+SVD: 0.02283298097251585
+Use pretrained network on: ucf101
+Loading checkpoint: saved_models/finetune/expand_only/cub/sup_finetune_resnet18+128_ucf101_epo100_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0/checkpoints/model-epoch99.pt
+Target task on: cub
+PCA: 0.020718816067653245
+SVD: 0.02114164904862581
+Use pretrained network on: cifar100
+Loading checkpoint: saved_models/finetune/expand_only/cub/sup_finetune_resnet18+128_cifar100_epo100_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0/checkpoints/model-epoch99.pt
+Target task on: cub
+PCA: 0.018604651162790753
+SVD: 0.01733615221987317
+Use pretrained network on: daimlerpedcls
+Loading checkpoint: saved_models/finetune/expand_only/cub/sup_finetune_resnet18+128_daimlerpedcls_epo100_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0/checkpoints/model-epoch99.pt
+Target task on: cub
+PCA: 0.013107822410147962
+SVD: 0.013107822410147962
+Use pretrained network on: gtsrb
+Loading checkpoint: saved_models/finetune/expand_only/cub/sup_finetune_resnet18+128_gtsrb_epo100_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0/checkpoints/model-epoch99.pt
+Target task on: cub
+PCA: 0.008879492600422867
+SVD: 0.008879492600422867
+Use pretrained network on: kather
+Loading checkpoint: saved_models/finetune/expand_only/cub/sup_finetune_resnet18+128_kather_epo100_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0/checkpoints/model-epoch99.pt
+Target task on: cub
+PCA: 0.02494714587737845
+SVD: 0.022410147991543394
+Use pretrained network on: svhn
+Loading checkpoint: saved_models/finetune/expand_only/cub/sup_finetune_resnet18+128_svhn_epo100_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0/checkpoints/model-epoch99.pt
+Target task on: cub
+PCA: 0.016913319238900604
+SVD: 0.018604651162790753
+Use pretrained network on: vgg-flowers
+Loading checkpoint: saved_models/finetune/expand_only/cub/sup_finetune_resnet18+128_vgg-flowers_epo100_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0/checkpoints/model-epoch99.pt
+Target task on: cub
+PCA: 0.02494714587737845
+SVD: 0.029598308668076112
+Use pretrained network on: bach
+Loading checkpoint: saved_models/finetune/expand_only/cub/sup_finetune_resnet18+128_bach_epo100_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0/checkpoints/model-epoch99.pt
+Target task on: cub
+PCA: 0.03213530655391117
+SVD: 0.029598308668076112
+Use pretrained network on: protein_atlas
+Traceback (most recent call last):
+  File "evaluate_finetune.py", line 141, in <module>
+    params = utils.load_params(pretrained_model_dir)
+  File "/home/zw287/mcr2/utils.py", line 73, in load_params
+    with open(_path, 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'saved_models/finetune/expand_only/cub/sup_finetune_resnet18+128_protein_atlas_epo100_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0/params.json'

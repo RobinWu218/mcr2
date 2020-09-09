@@ -1,0 +1,860 @@
+/pytorch/torch/csrc/utils/python_arg_parser.cpp:756: UserWarning: This overload of add_ is deprecated:
+	add_(Number alpha, Tensor other)
+Consider using one of the following signatures instead:
+	add_(Tensor other, *, Number alpha)
+/home/zw287/mcr2/residual_adapters/utils_pytorch.py:117: UserWarning: volatile was removed and now has no effect. Use `with torch.no_grad():` instead.
+  inputs, targets = Variable(inputs, volatile=True), Variable(targets)
+==> Resuming from checkpoint..
+Loading checkpoint: /home/zw287/mcr2/saved_models/experts/expand_only/sup_expert_expand_only_resnet18+128_cifar100_epo200_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0/checkpoints/model-epoch199.pt
+Start training
+
+Epoch: 0
+Epoch: [0][0/27]	Time 4.911 (4.911)	Data 3.964 (3.964)	
+Task 0 : Loss 4.8234 (4.8234)	Acc 0.000 (0.000)
+Epoch: [0]
+Task 0 : Test Loss 55.4663 (65.0593)	Test Acc 0.000 (0.990)
+Saving..
+Epoch lasted 284.80035185813904
+
+Epoch: 1
+Epoch: [1][0/27]	Time 3.542 (3.542)	Data 3.470 (3.470)	
+Task 0 : Loss 6.9017 (6.9017)	Acc 0.000 (0.000)
+Epoch: [1]
+Task 0 : Test Loss 6.9796 (4.9146)	Test Acc 0.000 (1.020)
+Saving..
+Epoch lasted 231.60648608207703
+
+Epoch: 2
+Epoch: [2][0/27]	Time 3.506 (3.506)	Data 3.436 (3.436)	
+Task 0 : Loss 5.4533 (5.4533)	Acc 0.000 (0.000)
+Epoch: [2]
+Task 0 : Test Loss 3.4125 (4.6196)	Test Acc 100.000 (0.990)
+Epoch lasted 182.83572244644165
+
+Epoch: 3
+Epoch: [3][0/27]	Time 3.512 (3.512)	Data 3.442 (3.442)	
+Task 0 : Loss 4.7522 (4.7522)	Acc 0.000 (0.000)
+Epoch: [3]
+Task 0 : Test Loss 3.8130 (4.5801)	Test Acc 81.818 (1.530)
+Saving..
+Epoch lasted 183.94287872314453
+
+Epoch: 4
+Epoch: [4][0/27]	Time 3.530 (3.530)	Data 3.460 (3.460)	
+Task 0 : Loss 4.6738 (4.6738)	Acc 0.000 (0.000)
+Epoch: [4]
+Task 0 : Test Loss 3.6298 (4.6737)	Test Acc 69.697 (1.530)
+Epoch lasted 183.2956144809723
+
+Epoch: 5
+Epoch: [5][0/27]	Time 3.526 (3.526)	Data 3.455 (3.455)	
+Task 0 : Loss 4.6447 (4.6447)	Acc 0.000 (0.000)
+Epoch: [5]
+Task 0 : Test Loss 3.4573 (4.5791)	Test Acc 100.000 (1.170)
+Epoch lasted 183.82416558265686
+
+Epoch: 6
+Epoch: [6][0/27]	Time 3.526 (3.526)	Data 3.455 (3.455)	
+Task 0 : Loss 4.6017 (4.6017)	Acc 0.000 (0.000)
+Epoch: [6]
+Task 0 : Test Loss 3.4410 (4.5706)	Test Acc 96.970 (1.290)
+Epoch lasted 183.2962682247162
+
+Epoch: 7
+Epoch: [7][0/27]	Time 3.526 (3.526)	Data 3.456 (3.456)	
+Task 0 : Loss 4.6325 (4.6325)	Acc 0.000 (0.000)
+Epoch: [7]
+Task 0 : Test Loss 3.5147 (4.6160)	Test Acc 100.000 (0.990)
+Epoch lasted 183.92943048477173
+
+Epoch: 8
+Epoch: [8][0/27]	Time 3.660 (3.660)	Data 3.590 (3.590)	
+Task 0 : Loss 4.6748 (4.6748)	Acc 0.000 (0.000)
+Epoch: [8]
+Task 0 : Test Loss 3.4024 (4.5639)	Test Acc 100.000 (1.200)
+Epoch lasted 183.7993128299713
+
+Epoch: 9
+Epoch: [9][0/27]	Time 3.524 (3.524)	Data 3.454 (3.454)	
+Task 0 : Loss 4.6854 (4.6854)	Acc 0.000 (0.000)
+Epoch: [9]
+Task 0 : Test Loss 3.8799 (4.6503)	Test Acc 72.727 (1.320)
+Epoch lasted 183.18813371658325
+
+Epoch: 10
+Epoch: [10][0/27]	Time 3.542 (3.542)	Data 3.471 (3.471)	
+Task 0 : Loss 4.7047 (4.7047)	Acc 0.000 (0.000)
+Epoch: [10]
+Task 0 : Test Loss 3.3257 (4.5567)	Test Acc 96.970 (1.290)
+Epoch lasted 183.86042737960815
+
+Epoch: 11
+Epoch: [11][0/27]	Time 3.511 (3.511)	Data 3.441 (3.441)	
+Task 0 : Loss 4.6821 (4.6821)	Acc 0.000 (0.000)
+Epoch: [11]
+Task 0 : Test Loss 3.5316 (4.5614)	Test Acc 100.000 (1.140)
+Epoch lasted 183.80033373832703
+
+Epoch: 12
+Epoch: [12][0/27]	Time 3.531 (3.531)	Data 3.460 (3.460)	
+Task 0 : Loss 4.6720 (4.6720)	Acc 0.000 (0.000)
+Epoch: [12]
+Task 0 : Test Loss 3.9997 (6.7490)	Test Acc 51.515 (1.320)
+Epoch lasted 183.46892547607422
+
+Epoch: 13
+Epoch: [13][0/27]	Time 3.512 (3.512)	Data 3.441 (3.441)	
+Task 0 : Loss 4.6752 (4.6752)	Acc 0.000 (0.000)
+Epoch: [13]
+Task 0 : Test Loss 3.8417 (4.5565)	Test Acc 87.879 (1.680)
+Saving..
+Epoch lasted 184.29274249076843
+
+Epoch: 14
+Epoch: [14][0/27]	Time 3.548 (3.548)	Data 3.478 (3.478)	
+Task 0 : Loss 4.7581 (4.7581)	Acc 0.000 (0.000)
+Epoch: [14]
+Task 0 : Test Loss 3.5871 (4.5627)	Test Acc 96.970 (1.170)
+Epoch lasted 183.32374262809753
+
+Epoch: 15
+Epoch: [15][0/27]	Time 3.521 (3.521)	Data 3.451 (3.451)	
+Task 0 : Loss 4.7011 (4.7011)	Acc 0.000 (0.000)
+Epoch: [15]
+Task 0 : Test Loss 3.5435 (4.5470)	Test Acc 93.939 (1.560)
+Epoch lasted 183.74024653434753
+
+Epoch: 16
+Epoch: [16][0/27]	Time 3.528 (3.528)	Data 3.457 (3.457)	
+Task 0 : Loss 4.6868 (4.6868)	Acc 0.000 (0.000)
+Epoch: [16]
+Task 0 : Test Loss 3.6458 (4.5425)	Test Acc 90.909 (1.560)
+Epoch lasted 183.4929130077362
+
+Epoch: 17
+Epoch: [17][0/27]	Time 3.518 (3.518)	Data 3.447 (3.447)	
+Task 0 : Loss 4.6842 (4.6842)	Acc 0.000 (0.000)
+Epoch: [17]
+Task 0 : Test Loss 3.6374 (4.5641)	Test Acc 87.879 (1.680)
+Epoch lasted 183.1026782989502
+
+Epoch: 18
+Epoch: [18][0/27]	Time 3.509 (3.509)	Data 3.439 (3.439)	
+Task 0 : Loss 4.6749 (4.6749)	Acc 0.000 (0.000)
+Epoch: [18]
+Task 0 : Test Loss 3.6992 (4.5351)	Test Acc 81.818 (1.590)
+Epoch lasted 183.52181792259216
+
+Epoch: 19
+Epoch: [19][0/27]	Time 3.538 (3.538)	Data 3.468 (3.468)	
+Task 0 : Loss 4.6751 (4.6751)	Acc 0.000 (0.000)
+Epoch: [19]
+Task 0 : Test Loss 3.9229 (4.5629)	Test Acc 75.758 (1.560)
+Epoch lasted 183.30758905410767
+
+Epoch: 20
+Epoch: [20][0/27]	Time 3.507 (3.507)	Data 3.436 (3.436)	
+Task 0 : Loss 4.7123 (4.7123)	Acc 0.000 (0.000)
+Epoch: [20]
+Task 0 : Test Loss 3.8522 (4.5557)	Test Acc 69.697 (1.680)
+Epoch lasted 184.6992163658142
+
+Epoch: 21
+Epoch: [21][0/27]	Time 3.517 (3.517)	Data 3.447 (3.447)	
+Task 0 : Loss 4.6909 (4.6909)	Acc 0.000 (0.000)
+Epoch: [21]
+Task 0 : Test Loss 3.7706 (4.5709)	Test Acc 69.697 (1.260)
+Epoch lasted 183.34235620498657
+
+Epoch: 22
+Epoch: [22][0/27]	Time 3.539 (3.539)	Data 3.469 (3.469)	
+Task 0 : Loss 4.6613 (4.6613)	Acc 0.000 (0.000)
+Epoch: [22]
+Task 0 : Test Loss 3.7546 (4.5433)	Test Acc 66.667 (1.710)
+Saving..
+Epoch lasted 183.93359112739563
+
+Epoch: 23
+Epoch: [23][0/27]	Time 3.520 (3.520)	Data 3.450 (3.450)	
+Task 0 : Loss 4.6552 (4.6552)	Acc 0.000 (0.000)
+Epoch: [23]
+Task 0 : Test Loss 3.8398 (4.5476)	Test Acc 69.697 (1.440)
+Epoch lasted 183.91322875022888
+
+Epoch: 24
+Epoch: [24][0/27]	Time 3.520 (3.520)	Data 3.450 (3.450)	
+Task 0 : Loss 4.6348 (4.6348)	Acc 0.000 (0.000)
+Epoch: [24]
+Task 0 : Test Loss 3.9037 (4.5725)	Test Acc 63.636 (1.590)
+Epoch lasted 183.38350558280945
+
+Epoch: 25
+Epoch: [25][0/27]	Time 3.520 (3.520)	Data 3.449 (3.449)	
+Task 0 : Loss 4.6506 (4.6506)	Acc 0.000 (0.000)
+Epoch: [25]
+Task 0 : Test Loss 4.0459 (4.5496)	Test Acc 51.515 (1.680)
+Epoch lasted 183.6354193687439
+
+Epoch: 26
+Epoch: [26][0/27]	Time 3.524 (3.524)	Data 3.453 (3.453)	
+Task 0 : Loss 4.6212 (4.6212)	Acc 0.000 (0.000)
+Epoch: [26]
+Task 0 : Test Loss 3.9928 (4.5535)	Test Acc 51.515 (1.470)
+Epoch lasted 183.5241141319275
+
+Epoch: 27
+Epoch: [27][0/27]	Time 3.748 (3.748)	Data 3.677 (3.677)	
+Task 0 : Loss 4.6308 (4.6308)	Acc 0.000 (0.000)
+Epoch: [27]
+Task 0 : Test Loss 3.5058 (4.5879)	Test Acc 87.879 (1.710)
+Epoch lasted 183.6140685081482
+
+Epoch: 28
+Epoch: [28][0/27]	Time 3.512 (3.512)	Data 3.442 (3.442)	
+Task 0 : Loss 4.6764 (4.6764)	Acc 0.000 (0.000)
+Epoch: [28]
+Task 0 : Test Loss 3.8533 (4.5463)	Test Acc 69.697 (1.740)
+Saving..
+Epoch lasted 184.0863025188446
+
+Epoch: 29
+Epoch: [29][0/27]	Time 3.531 (3.531)	Data 3.461 (3.461)	
+Task 0 : Loss 4.6546 (4.6546)	Acc 0.000 (0.000)
+Epoch: [29]
+Task 0 : Test Loss 4.2279 (4.5446)	Test Acc 42.424 (2.220)
+Saving..
+Epoch lasted 183.85722184181213
+
+Epoch: 30
+Epoch: [30][0/27]	Time 3.541 (3.541)	Data 3.471 (3.471)	
+Task 0 : Loss 4.6473 (4.6473)	Acc 0.000 (0.000)
+Epoch: [30]
+Task 0 : Test Loss 4.4783 (4.5496)	Test Acc 18.182 (1.890)
+Epoch lasted 183.44040846824646
+
+Epoch: 31
+Epoch: [31][0/27]	Time 3.542 (3.542)	Data 3.472 (3.472)	
+Task 0 : Loss 4.6341 (4.6341)	Acc 0.000 (0.000)
+Epoch: [31]
+Task 0 : Test Loss 4.1689 (4.5540)	Test Acc 39.394 (2.400)
+Saving..
+Epoch lasted 183.6358621120453
+
+Epoch: 32
+Epoch: [32][0/27]	Time 3.517 (3.517)	Data 3.447 (3.447)	
+Task 0 : Loss 4.6313 (4.6313)	Acc 0.000 (0.000)
+Epoch: [32]
+Task 0 : Test Loss 3.9974 (4.5594)	Test Acc 48.485 (2.070)
+Epoch lasted 183.14973306655884
+
+Epoch: 33
+Epoch: [33][0/27]	Time 3.728 (3.728)	Data 3.657 (3.657)	
+Task 0 : Loss 4.6389 (4.6389)	Acc 0.000 (0.000)
+Epoch: [33]
+Task 0 : Test Loss 4.4049 (4.5710)	Test Acc 30.303 (2.370)
+Epoch lasted 183.39213967323303
+
+Epoch: 34
+Epoch: [34][0/27]	Time 3.522 (3.522)	Data 3.451 (3.451)	
+Task 0 : Loss 4.6118 (4.6118)	Acc 0.000 (0.000)
+Epoch: [34]
+Task 0 : Test Loss 3.9350 (4.5902)	Test Acc 45.455 (2.550)
+Saving..
+Epoch lasted 183.63616132736206
+
+Epoch: 35
+Epoch: [35][0/27]	Time 3.505 (3.505)	Data 3.435 (3.435)	
+Task 0 : Loss 4.7691 (4.7691)	Acc 0.000 (0.000)
+Epoch: [35]
+Task 0 : Test Loss 4.6169 (4.7652)	Test Acc 15.152 (1.530)
+Epoch lasted 183.41429209709167
+
+Epoch: 36
+Epoch: [36][0/27]	Time 3.519 (3.519)	Data 3.449 (3.449)	
+Task 0 : Loss 4.6821 (4.6821)	Acc 0.000 (0.000)
+Epoch: [36]
+Task 0 : Test Loss 4.3012 (4.5879)	Test Acc 21.212 (1.890)
+Epoch lasted 183.18431162834167
+
+Epoch: 37
+Epoch: [37][0/27]	Time 3.515 (3.515)	Data 3.444 (3.444)	
+Task 0 : Loss 4.6194 (4.6194)	Acc 0.000 (0.000)
+Epoch: [37]
+Task 0 : Test Loss 3.8810 (4.6208)	Test Acc 75.758 (1.320)
+Epoch lasted 183.2959327697754
+
+Epoch: 38
+Epoch: [38][0/27]	Time 3.533 (3.533)	Data 3.462 (3.462)	
+Task 0 : Loss 4.6130 (4.6130)	Acc 0.000 (0.000)
+Epoch: [38]
+Task 0 : Test Loss 4.7704 (4.8315)	Test Acc 0.000 (1.320)
+Epoch lasted 183.49037218093872
+
+Epoch: 39
+Epoch: [39][0/27]	Time 3.537 (3.537)	Data 3.467 (3.467)	
+Task 0 : Loss 4.6574 (4.6574)	Acc 0.000 (0.000)
+Epoch: [39]
+Task 0 : Test Loss 6.5717 (5.0979)	Test Acc 3.030 (1.200)
+Epoch lasted 183.30303168296814
+
+Epoch: 40
+Epoch: [40][0/27]	Time 3.549 (3.549)	Data 3.478 (3.478)	
+Task 0 : Loss 4.6177 (4.6177)	Acc 0.000 (0.000)
+Epoch: [40]
+Task 0 : Test Loss 4.8229 (4.6121)	Test Acc 3.030 (1.590)
+Epoch lasted 183.83150553703308
+
+Epoch: 41
+Epoch: [41][0/27]	Time 3.526 (3.526)	Data 3.456 (3.456)	
+Task 0 : Loss 4.6152 (4.6152)	Acc 0.781 (0.781)
+Epoch: [41]
+Task 0 : Test Loss 4.7142 (4.5756)	Test Acc 0.000 (1.650)
+Epoch lasted 183.7318778038025
+
+Epoch: 42
+Epoch: [42][0/27]	Time 3.524 (3.524)	Data 3.454 (3.454)	
+Task 0 : Loss 4.5684 (4.5684)	Acc 0.000 (0.000)
+Epoch: [42]
+Task 0 : Test Loss 5.0971 (4.5868)	Test Acc 0.000 (1.770)
+Epoch lasted 183.42262768745422
+
+Epoch: 43
+Epoch: [43][0/27]	Time 3.503 (3.503)	Data 3.433 (3.433)	
+Task 0 : Loss 4.5848 (4.5848)	Acc 0.781 (0.781)
+Epoch: [43]
+Task 0 : Test Loss 4.7446 (5.4225)	Test Acc 21.212 (1.410)
+Epoch lasted 182.74663019180298
+
+Epoch: 44
+Epoch: [44][0/27]	Time 3.488 (3.488)	Data 3.418 (3.418)	
+Task 0 : Loss 4.6372 (4.6372)	Acc 0.000 (0.000)
+Epoch: [44]
+Task 0 : Test Loss 5.6640 (4.8204)	Test Acc 0.000 (1.860)
+Epoch lasted 182.96676325798035
+
+Epoch: 45
+Epoch: [45][0/27]	Time 3.508 (3.508)	Data 3.437 (3.437)	
+Task 0 : Loss 4.6079 (4.6079)	Acc 0.000 (0.000)
+Epoch: [45]
+Task 0 : Test Loss 4.4900 (4.5651)	Test Acc 3.030 (2.430)
+Epoch lasted 183.33557677268982
+
+Epoch: 46
+Epoch: [46][0/27]	Time 3.502 (3.502)	Data 3.431 (3.431)	
+Task 0 : Loss 4.5026 (4.5026)	Acc 0.781 (0.781)
+Epoch: [46]
+Task 0 : Test Loss 4.6480 (4.9071)	Test Acc 3.030 (1.350)
+Epoch lasted 183.60949206352234
+
+Epoch: 47
+Epoch: [47][0/27]	Time 3.699 (3.699)	Data 3.628 (3.628)	
+Task 0 : Loss 4.5600 (4.5600)	Acc 1.562 (1.562)
+Epoch: [47]
+Task 0 : Test Loss 5.0776 (4.6302)	Test Acc 0.000 (1.740)
+Epoch lasted 183.83674311637878
+
+Epoch: 48
+Epoch: [48][0/27]	Time 3.536 (3.536)	Data 3.464 (3.464)	
+Task 0 : Loss 4.6344 (4.6344)	Acc 0.000 (0.000)
+Epoch: [48]
+Task 0 : Test Loss 5.1855 (4.7503)	Test Acc 0.000 (1.500)
+Epoch lasted 183.37382817268372
+
+Epoch: 49
+Epoch: [49][0/27]	Time 3.512 (3.512)	Data 3.441 (3.441)	
+Task 0 : Loss 4.5046 (4.5046)	Acc 0.781 (0.781)
+Epoch: [49]
+Task 0 : Test Loss 5.1126 (4.5877)	Test Acc 0.000 (2.400)
+Epoch lasted 183.48632740974426
+
+Epoch: 50
+Epoch: [50][0/27]	Time 3.523 (3.523)	Data 3.452 (3.452)	
+Task 0 : Loss 4.5375 (4.5375)	Acc 0.781 (0.781)
+Epoch: [50]
+Task 0 : Test Loss 4.8082 (4.5549)	Test Acc 0.000 (2.370)
+Epoch lasted 183.75366187095642
+
+Epoch: 51
+Epoch: [51][0/27]	Time 3.528 (3.528)	Data 3.456 (3.456)	
+Task 0 : Loss 4.4668 (4.4668)	Acc 2.344 (2.344)
+Epoch: [51]
+Task 0 : Test Loss 4.5309 (4.5639)	Test Acc 0.000 (2.790)
+Saving..
+Epoch lasted 184.25407147407532
+
+Epoch: 52
+Epoch: [52][0/27]	Time 3.527 (3.527)	Data 3.456 (3.456)	
+Task 0 : Loss 4.4185 (4.4185)	Acc 3.125 (3.125)
+Epoch: [52]
+Task 0 : Test Loss 5.1629 (4.5680)	Test Acc 0.000 (2.310)
+Epoch lasted 183.57553553581238
+
+Epoch: 53
+Epoch: [53][0/27]	Time 3.530 (3.530)	Data 3.459 (3.459)	
+Task 0 : Loss 4.4834 (4.4834)	Acc 0.000 (0.000)
+Epoch: [53]
+Task 0 : Test Loss 4.9844 (4.5546)	Test Acc 0.000 (2.460)
+Epoch lasted 183.20225358009338
+
+Epoch: 54
+Epoch: [54][0/27]	Time 3.501 (3.501)	Data 3.431 (3.431)	
+Task 0 : Loss 4.5081 (4.5081)	Acc 0.781 (0.781)
+Epoch: [54]
+Task 0 : Test Loss 4.9499 (4.5603)	Test Acc 0.000 (2.790)
+Epoch lasted 183.65992665290833
+
+Epoch: 55
+Epoch: [55][0/27]	Time 3.500 (3.500)	Data 3.430 (3.430)	
+Task 0 : Loss 4.5311 (4.5311)	Acc 1.562 (1.562)
+Epoch: [55]
+Task 0 : Test Loss 4.7764 (4.5704)	Test Acc 0.000 (2.670)
+Epoch lasted 184.46476078033447
+
+Epoch: 56
+Epoch: [56][0/27]	Time 3.541 (3.541)	Data 3.471 (3.471)	
+Task 0 : Loss 4.5270 (4.5270)	Acc 1.562 (1.562)
+Epoch: [56]
+Task 0 : Test Loss 4.7641 (4.5684)	Test Acc 0.000 (2.340)
+Epoch lasted 184.25063014030457
+
+Epoch: 57
+Epoch: [57][0/27]	Time 3.576 (3.576)	Data 3.486 (3.486)	
+Task 0 : Loss 4.5066 (4.5066)	Acc 2.344 (2.344)
+Epoch: [57]
+Task 0 : Test Loss 4.6943 (4.5807)	Test Acc 0.000 (2.370)
+Epoch lasted 183.65626001358032
+
+Epoch: 58
+Epoch: [58][0/27]	Time 3.524 (3.524)	Data 3.453 (3.453)	
+Task 0 : Loss 4.4995 (4.4995)	Acc 4.688 (4.688)
+Epoch: [58]
+Task 0 : Test Loss 4.7015 (4.5957)	Test Acc 0.000 (2.070)
+Epoch lasted 183.17520809173584
+
+Epoch: 59
+Epoch: [59][0/27]	Time 3.525 (3.525)	Data 3.455 (3.455)	
+Task 0 : Loss 4.4874 (4.4874)	Acc 0.000 (0.000)
+Epoch: [59]
+Task 0 : Test Loss 4.5701 (4.6111)	Test Acc 0.000 (2.160)
+Epoch lasted 183.4791476726532
+
+Epoch: 60
+Epoch: [60][0/27]	Time 3.523 (3.523)	Data 3.453 (3.453)	
+Task 0 : Loss 4.4977 (4.4977)	Acc 0.000 (0.000)
+Epoch: [60]
+Task 0 : Test Loss 4.3984 (4.6206)	Test Acc 0.000 (2.340)
+Epoch lasted 183.92539858818054
+
+Epoch: 61
+Epoch: [61][0/27]	Time 3.525 (3.525)	Data 3.454 (3.454)	
+Task 0 : Loss 4.5188 (4.5188)	Acc 0.000 (0.000)
+Epoch: [61]
+Task 0 : Test Loss 4.2812 (4.6041)	Test Acc 3.030 (2.220)
+Epoch lasted 184.14944219589233
+
+Epoch: 62
+Epoch: [62][0/27]	Time 3.523 (3.523)	Data 3.453 (3.453)	
+Task 0 : Loss 4.4668 (4.4668)	Acc 0.000 (0.000)
+Epoch: [62]
+Task 0 : Test Loss 4.3192 (4.6719)	Test Acc 6.061 (2.280)
+Epoch lasted 183.88286089897156
+
+Epoch: 63
+Epoch: [63][0/27]	Time 3.557 (3.557)	Data 3.487 (3.487)	
+Task 0 : Loss 4.4441 (4.4441)	Acc 1.562 (1.562)
+Epoch: [63]
+Task 0 : Test Loss 4.9109 (4.6496)	Test Acc 0.000 (2.760)
+Epoch lasted 182.57400918006897
+
+Epoch: 64
+Epoch: [64][0/27]	Time 3.512 (3.512)	Data 3.441 (3.441)	
+Task 0 : Loss 4.4731 (4.4731)	Acc 0.781 (0.781)
+Epoch: [64]
+Task 0 : Test Loss 5.1134 (4.6883)	Test Acc 0.000 (2.520)
+Epoch lasted 182.67083263397217
+
+Epoch: 65
+Epoch: [65][0/27]	Time 3.528 (3.528)	Data 3.457 (3.457)	
+Task 0 : Loss 4.4171 (4.4171)	Acc 1.562 (1.562)
+Epoch: [65]
+Task 0 : Test Loss 5.7066 (4.6826)	Test Acc 0.000 (2.610)
+Epoch lasted 182.98938703536987
+
+Epoch: 66
+Epoch: [66][0/27]	Time 3.879 (3.879)	Data 3.808 (3.808)	
+Task 0 : Loss 4.3908 (4.3908)	Acc 0.781 (0.781)
+Epoch: [66]
+Task 0 : Test Loss 6.3567 (4.7791)	Test Acc 0.000 (2.550)
+Epoch lasted 183.33853363990784
+
+Epoch: 67
+Epoch: [67][0/27]	Time 3.730 (3.730)	Data 3.660 (3.660)	
+Task 0 : Loss 4.3937 (4.3937)	Acc 0.781 (0.781)
+Epoch: [67]
+Task 0 : Test Loss 5.3601 (4.6704)	Test Acc 0.000 (2.370)
+Epoch lasted 183.62106847763062
+
+Epoch: 68
+Epoch: [68][0/27]	Time 3.482 (3.482)	Data 3.412 (3.412)	
+Task 0 : Loss 4.3766 (4.3766)	Acc 1.562 (1.562)
+Epoch: [68]
+Task 0 : Test Loss 5.0006 (4.6877)	Test Acc 0.000 (2.610)
+Epoch lasted 183.26089334487915
+
+Epoch: 69
+Epoch: [69][0/27]	Time 3.521 (3.521)	Data 3.450 (3.450)	
+Task 0 : Loss 4.3393 (4.3393)	Acc 3.125 (3.125)
+Epoch: [69]
+Task 0 : Test Loss 5.1455 (4.6654)	Test Acc 0.000 (2.190)
+Epoch lasted 182.9591155052185
+
+Epoch: 70
+Epoch: [70][0/27]	Time 3.498 (3.498)	Data 3.427 (3.427)	
+Task 0 : Loss 4.5593 (4.5593)	Acc 0.000 (0.000)
+Epoch: [70]
+Task 0 : Test Loss 5.6333 (4.6822)	Test Acc 0.000 (2.700)
+Epoch lasted 183.40584087371826
+
+Epoch: 71
+Epoch: [71][0/27]	Time 3.530 (3.530)	Data 3.460 (3.460)	
+Task 0 : Loss 4.3974 (4.3974)	Acc 1.562 (1.562)
+Epoch: [71]
+Task 0 : Test Loss 5.9759 (4.7117)	Test Acc 0.000 (2.460)
+Epoch lasted 183.7924177646637
+
+Epoch: 72
+Epoch: [72][0/27]	Time 3.528 (3.528)	Data 3.458 (3.458)	
+Task 0 : Loss 4.3739 (4.3739)	Acc 1.562 (1.562)
+Epoch: [72]
+Task 0 : Test Loss 5.3612 (4.6541)	Test Acc 0.000 (2.700)
+Epoch lasted 183.34893989562988
+
+Epoch: 73
+Epoch: [73][0/27]	Time 3.525 (3.525)	Data 3.455 (3.455)	
+Task 0 : Loss 4.3015 (4.3015)	Acc 3.125 (3.125)
+Epoch: [73]
+Task 0 : Test Loss 5.3948 (4.7072)	Test Acc 0.000 (2.640)
+Epoch lasted 183.1297619342804
+
+Epoch: 74
+Epoch: [74][0/27]	Time 3.535 (3.535)	Data 3.465 (3.465)	
+Task 0 : Loss 4.9454 (4.9454)	Acc 0.781 (0.781)
+Epoch: [74]
+Task 0 : Test Loss 6.0120 (4.9368)	Test Acc 0.000 (2.490)
+Epoch lasted 183.63363099098206
+
+Epoch: 75
+Epoch: [75][0/27]	Time 3.540 (3.540)	Data 3.470 (3.470)	
+Task 0 : Loss 4.4951 (4.4951)	Acc 1.562 (1.562)
+Epoch: [75]
+Task 0 : Test Loss 5.3054 (4.6816)	Test Acc 0.000 (2.790)
+Epoch lasted 183.3522322177887
+
+Epoch: 76
+Epoch: [76][0/27]	Time 3.524 (3.524)	Data 3.453 (3.453)	
+Task 0 : Loss 4.4759 (4.4759)	Acc 0.000 (0.000)
+Epoch: [76]
+Task 0 : Test Loss 5.6594 (4.6966)	Test Acc 0.000 (2.370)
+Epoch lasted 183.8916838169098
+
+Epoch: 77
+Epoch: [77][0/27]	Time 3.499 (3.499)	Data 3.429 (3.429)	
+Task 0 : Loss 4.3813 (4.3813)	Acc 2.344 (2.344)
+Epoch: [77]
+Task 0 : Test Loss 5.0391 (4.7062)	Test Acc 3.030 (2.310)
+Epoch lasted 183.50581884384155
+
+Epoch: 78
+Epoch: [78][0/27]	Time 3.515 (3.515)	Data 3.444 (3.444)	
+Task 0 : Loss 4.5273 (4.5273)	Acc 0.781 (0.781)
+Epoch: [78]
+Task 0 : Test Loss 5.4037 (5.0846)	Test Acc 0.000 (1.650)
+Epoch lasted 183.3605399131775
+
+Epoch: 79
+Epoch: [79][0/27]	Time 3.514 (3.514)	Data 3.444 (3.444)	
+Task 0 : Loss 4.5256 (4.5256)	Acc 2.344 (2.344)
+Epoch: [79]
+Task 0 : Test Loss 6.1781 (4.8408)	Test Acc 0.000 (2.670)
+Epoch lasted 183.70062446594238
+
+Epoch: 80
+Epoch: [80][0/27]	Time 4.136 (4.136)	Data 4.065 (4.065)	
+Task 0 : Loss 4.9213 (4.9213)	Acc 0.000 (0.000)
+Epoch: [80]
+Task 0 : Test Loss 4.3077 (4.7081)	Test Acc 6.061 (2.580)
+Epoch lasted 183.90049123764038
+
+Epoch: 81
+Epoch: [81][0/27]	Time 3.528 (3.528)	Data 3.457 (3.457)	
+Task 0 : Loss 4.3028 (4.3028)	Acc 2.344 (2.344)
+Epoch: [81]
+Task 0 : Test Loss 4.8663 (4.6784)	Test Acc 0.000 (2.820)
+Saving..
+Epoch lasted 184.54128456115723
+
+Epoch: 82
+Epoch: [82][0/27]	Time 3.532 (3.532)	Data 3.462 (3.462)	
+Task 0 : Loss 4.2334 (4.2334)	Acc 0.781 (0.781)
+Epoch: [82]
+Task 0 : Test Loss 4.7838 (4.6832)	Test Acc 0.000 (2.760)
+Epoch lasted 183.87569379806519
+
+Epoch: 83
+Epoch: [83][0/27]	Time 3.544 (3.544)	Data 3.473 (3.473)	
+Task 0 : Loss 4.1858 (4.1858)	Acc 3.125 (3.125)
+Epoch: [83]
+Task 0 : Test Loss 4.8060 (4.6800)	Test Acc 3.030 (2.790)
+Epoch lasted 183.40821623802185
+
+Epoch: 84
+Epoch: [84][0/27]	Time 3.533 (3.533)	Data 3.462 (3.462)	
+Task 0 : Loss 4.1621 (4.1621)	Acc 1.562 (1.562)
+Epoch: [84]
+Task 0 : Test Loss 5.0002 (4.6954)	Test Acc 0.000 (2.580)
+Epoch lasted 183.71756291389465
+
+Epoch: 85
+Epoch: [85][0/27]	Time 3.515 (3.515)	Data 3.445 (3.445)	
+Task 0 : Loss 4.1374 (4.1374)	Acc 3.125 (3.125)
+Epoch: [85]
+Task 0 : Test Loss 5.2199 (4.6972)	Test Acc 0.000 (2.460)
+Epoch lasted 183.2572922706604
+
+Epoch: 86
+Epoch: [86][0/27]	Time 3.819 (3.819)	Data 3.749 (3.749)	
+Task 0 : Loss 4.0902 (4.0902)	Acc 2.344 (2.344)
+Epoch: [86]
+Task 0 : Test Loss 5.0490 (4.6992)	Test Acc 3.030 (2.520)
+Epoch lasted 183.75922083854675
+
+Epoch: 87
+Epoch: [87][0/27]	Time 3.555 (3.555)	Data 3.484 (3.484)	
+Task 0 : Loss 4.0656 (4.0656)	Acc 3.125 (3.125)
+Epoch: [87]
+Task 0 : Test Loss 5.2352 (4.7133)	Test Acc 0.000 (2.310)
+Epoch lasted 184.0799810886383
+
+Epoch: 88
+Epoch: [88][0/27]	Time 3.508 (3.508)	Data 3.437 (3.437)	
+Task 0 : Loss 4.0443 (4.0443)	Acc 4.688 (4.688)
+Epoch: [88]
+Task 0 : Test Loss 5.3049 (4.6959)	Test Acc 0.000 (2.520)
+Epoch lasted 182.8940086364746
+
+Epoch: 89
+Epoch: [89][0/27]	Time 3.523 (3.523)	Data 3.453 (3.453)	
+Task 0 : Loss 4.0362 (4.0362)	Acc 3.125 (3.125)
+Epoch: [89]
+Task 0 : Test Loss 5.2259 (4.7179)	Test Acc 0.000 (2.430)
+Epoch lasted 183.2633605003357
+
+Epoch: 90
+Epoch: [90][0/27]	Time 3.529 (3.529)	Data 3.458 (3.458)	
+Task 0 : Loss 3.9795 (3.9795)	Acc 7.031 (7.031)
+Epoch: [90]
+Task 0 : Test Loss 5.2513 (4.7134)	Test Acc 0.000 (2.400)
+Epoch lasted 183.2412142753601
+
+Epoch: 91
+Epoch: [91][0/27]	Time 3.536 (3.536)	Data 3.465 (3.465)	
+Task 0 : Loss 3.9800 (3.9800)	Acc 3.906 (3.906)
+Epoch: [91]
+Task 0 : Test Loss 5.2775 (4.7368)	Test Acc 0.000 (2.370)
+Epoch lasted 183.55260562896729
+
+Epoch: 92
+Epoch: [92][0/27]	Time 3.539 (3.539)	Data 3.469 (3.469)	
+Task 0 : Loss 3.9323 (3.9323)	Acc 4.688 (4.688)
+Epoch: [92]
+Task 0 : Test Loss 5.5549 (4.7186)	Test Acc 0.000 (2.190)
+Epoch lasted 183.7226881980896
+
+Epoch: 93
+Epoch: [93][0/27]	Time 3.794 (3.794)	Data 3.723 (3.723)	
+Task 0 : Loss 3.9797 (3.9797)	Acc 4.688 (4.688)
+Epoch: [93]
+Task 0 : Test Loss 5.3616 (4.7369)	Test Acc 0.000 (2.280)
+Epoch lasted 183.88832831382751
+
+Epoch: 94
+Epoch: [94][0/27]	Time 3.579 (3.579)	Data 3.508 (3.508)	
+Task 0 : Loss 3.9083 (3.9083)	Acc 4.688 (4.688)
+Epoch: [94]
+Task 0 : Test Loss 5.6126 (4.7340)	Test Acc 0.000 (2.160)
+Epoch lasted 182.98248028755188
+
+Epoch: 95
+Epoch: [95][0/27]	Time 3.521 (3.521)	Data 3.451 (3.451)	
+Task 0 : Loss 3.8934 (3.8934)	Acc 7.031 (7.031)
+Epoch: [95]
+Task 0 : Test Loss 5.6578 (4.7322)	Test Acc 0.000 (2.190)
+Epoch lasted 183.57509851455688
+
+Epoch: 96
+Epoch: [96][0/27]	Time 3.702 (3.702)	Data 3.632 (3.632)	
+Task 0 : Loss 3.9172 (3.9172)	Acc 6.250 (6.250)
+Epoch: [96]
+Task 0 : Test Loss 5.5961 (4.7374)	Test Acc 0.000 (2.220)
+Epoch lasted 183.59613609313965
+
+Epoch: 97
+Epoch: [97][0/27]	Time 3.548 (3.548)	Data 3.477 (3.477)	
+Task 0 : Loss 3.8581 (3.8581)	Acc 4.688 (4.688)
+Epoch: [97]
+Task 0 : Test Loss 5.6384 (4.7531)	Test Acc 0.000 (2.310)
+Epoch lasted 183.52117395401
+
+Epoch: 98
+Epoch: [98][0/27]	Time 3.438 (3.438)	Data 3.368 (3.368)	
+Task 0 : Loss 3.8338 (3.8338)	Acc 4.688 (4.688)
+Epoch: [98]
+Task 0 : Test Loss 5.5371 (4.7626)	Test Acc 0.000 (2.130)
+Epoch lasted 183.29039239883423
+
+Epoch: 99
+Epoch: [99][0/27]	Time 3.528 (3.528)	Data 3.458 (3.458)	
+Task 0 : Loss 3.8478 (3.8478)	Acc 6.250 (6.250)
+Epoch: [99]
+Task 0 : Test Loss 5.8107 (4.7513)	Test Acc 0.000 (2.280)
+Epoch lasted 184.77155423164368
+
+Epoch: 100
+Epoch: [100][0/27]	Time 3.544 (3.544)	Data 3.474 (3.474)	
+Task 0 : Loss 3.8077 (3.8077)	Acc 4.688 (4.688)
+Epoch: [100]
+Task 0 : Test Loss 5.8564 (4.7430)	Test Acc 0.000 (2.220)
+Epoch lasted 183.25664234161377
+
+Epoch: 101
+Epoch: [101][0/27]	Time 3.524 (3.524)	Data 3.454 (3.454)	
+Task 0 : Loss 3.8378 (3.8378)	Acc 5.469 (5.469)
+Epoch: [101]
+Task 0 : Test Loss 5.7312 (4.7581)	Test Acc 0.000 (2.160)
+Epoch lasted 183.43257999420166
+
+Epoch: 102
+Epoch: [102][0/27]	Time 3.526 (3.526)	Data 3.455 (3.455)	
+Task 0 : Loss 3.7962 (3.7962)	Acc 7.031 (7.031)
+Epoch: [102]
+Task 0 : Test Loss 5.7783 (4.7486)	Test Acc 0.000 (2.130)
+Epoch lasted 183.1917381286621
+
+Epoch: 103
+Epoch: [103][0/27]	Time 3.490 (3.490)	Data 3.420 (3.420)	
+Task 0 : Loss 3.8007 (3.8007)	Acc 5.469 (5.469)
+Epoch: [103]
+Task 0 : Test Loss 5.6619 (4.7604)	Test Acc 0.000 (2.160)
+Epoch lasted 183.43850135803223
+
+Epoch: 104
+Epoch: [104][0/27]	Time 3.504 (3.504)	Data 3.433 (3.433)	
+Task 0 : Loss 3.8061 (3.8061)	Acc 7.031 (7.031)
+Epoch: [104]
+Task 0 : Test Loss 5.8065 (4.7539)	Test Acc 0.000 (2.190)
+Epoch lasted 184.5515115261078
+
+Epoch: 105
+Epoch: [105][0/27]	Time 3.807 (3.807)	Data 3.736 (3.736)	
+Task 0 : Loss 3.8223 (3.8223)	Acc 6.250 (6.250)
+Epoch: [105]
+Task 0 : Test Loss 5.7153 (4.7533)	Test Acc 0.000 (2.070)
+Epoch lasted 185.47935128211975
+
+Epoch: 106
+Epoch: [106][0/27]	Time 3.534 (3.534)	Data 3.463 (3.463)	
+Task 0 : Loss 3.7801 (3.7801)	Acc 9.375 (9.375)
+Epoch: [106]
+Task 0 : Test Loss 5.5683 (4.7573)	Test Acc 0.000 (2.190)
+Epoch lasted 184.55538082122803
+
+Epoch: 107
+Epoch: [107][0/27]	Time 3.518 (3.518)	Data 3.448 (3.448)	
+Task 0 : Loss 3.8094 (3.8094)	Acc 6.250 (6.250)
+Epoch: [107]
+Task 0 : Test Loss 5.7410 (4.7463)	Test Acc 0.000 (2.040)
+Epoch lasted 183.0746099948883
+
+Epoch: 108
+Epoch: [108][0/27]	Time 3.537 (3.537)	Data 3.466 (3.466)	
+Task 0 : Loss 3.7831 (3.7831)	Acc 6.250 (6.250)
+Epoch: [108]
+Task 0 : Test Loss 5.6618 (4.7798)	Test Acc 0.000 (2.250)
+Epoch lasted 183.72272157669067
+
+Epoch: 109
+Epoch: [109][0/27]	Time 3.522 (3.522)	Data 3.452 (3.452)	
+Task 0 : Loss 3.7768 (3.7768)	Acc 7.812 (7.812)
+Epoch: [109]
+Task 0 : Test Loss 5.7257 (4.7379)	Test Acc 0.000 (2.070)
+Epoch lasted 183.9354705810547
+
+Epoch: 110
+Epoch: [110][0/27]	Time 3.529 (3.529)	Data 3.458 (3.458)	
+Task 0 : Loss 3.8092 (3.8092)	Acc 6.250 (6.250)
+Epoch: [110]
+Task 0 : Test Loss 5.7033 (4.7604)	Test Acc 0.000 (2.100)
+Epoch lasted 183.11151123046875
+
+Epoch: 111
+Epoch: [111][0/27]	Time 3.528 (3.528)	Data 3.457 (3.457)	
+Task 0 : Loss 3.8053 (3.8053)	Acc 6.250 (6.250)
+Epoch: [111]
+Task 0 : Test Loss 5.7543 (4.7540)	Test Acc 0.000 (2.100)
+Epoch lasted 184.59071946144104
+
+Epoch: 112
+Epoch: [112][0/27]	Time 3.519 (3.519)	Data 3.448 (3.448)	
+Task 0 : Loss 3.8271 (3.8271)	Acc 8.594 (8.594)
+Epoch: [112]
+Task 0 : Test Loss 5.6575 (4.7609)	Test Acc 0.000 (2.160)
+Epoch lasted 184.29339385032654
+
+Epoch: 113
+Epoch: [113][0/27]	Time 3.539 (3.539)	Data 3.469 (3.469)	
+Task 0 : Loss 3.8083 (3.8083)	Acc 7.812 (7.812)
+Epoch: [113]
+Task 0 : Test Loss 5.8438 (4.7415)	Test Acc 0.000 (2.130)
+Epoch lasted 184.17990636825562
+
+Epoch: 114
+Epoch: [114][0/27]	Time 3.543 (3.543)	Data 3.473 (3.473)	
+Task 0 : Loss 3.7893 (3.7893)	Acc 5.469 (5.469)
+Epoch: [114]
+Task 0 : Test Loss 5.7294 (4.7479)	Test Acc 0.000 (2.100)
+Epoch lasted 185.2354702949524
+
+Epoch: 115
+Epoch: [115][0/27]	Time 3.516 (3.516)	Data 3.446 (3.446)	
+Task 0 : Loss 3.8214 (3.8214)	Acc 6.250 (6.250)
+Epoch: [115]
+Task 0 : Test Loss 5.7432 (4.7570)	Test Acc 0.000 (1.980)
+Epoch lasted 184.1917052268982
+
+Epoch: 116
+Epoch: [116][0/27]	Time 3.505 (3.505)	Data 3.433 (3.433)	
+Task 0 : Loss 3.7580 (3.7580)	Acc 6.250 (6.250)
+Epoch: [116]
+Task 0 : Test Loss 5.8110 (4.7488)	Test Acc 0.000 (2.010)
+Epoch lasted 183.70125699043274
+
+Epoch: 117
+Epoch: [117][0/27]	Time 3.459 (3.459)	Data 3.389 (3.389)	
+Task 0 : Loss 3.7777 (3.7777)	Acc 7.031 (7.031)
+Epoch: [117]
+Task 0 : Test Loss 5.6103 (4.7736)	Test Acc 0.000 (2.190)
+Epoch lasted 183.105406999588
+
+Epoch: 118
+Epoch: [118][0/27]	Time 3.472 (3.472)	Data 3.402 (3.402)	
+Task 0 : Loss 3.7872 (3.7872)	Acc 6.250 (6.250)
+Epoch: [118]
+Task 0 : Test Loss 5.6171 (4.7810)	Test Acc 0.000 (2.160)
+Epoch lasted 184.1500961780548
+
+Epoch: 119
+Epoch: [119][0/27]	Time 3.534 (3.534)	Data 3.464 (3.464)	
+Task 0 : Loss 3.7732 (3.7732)	Acc 5.469 (5.469)
+Epoch: [119]
+Task 0 : Test Loss 5.8394 (4.7708)	Test Acc 0.000 (2.130)
+Epoch lasted 183.92835140228271

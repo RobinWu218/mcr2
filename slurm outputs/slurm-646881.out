@@ -1,0 +1,77 @@
+Start Evaluation on fullterm pretrained networks
+Use pretrained network on: aircraft
+Loading checkpoint: saved_models/finetune/fullterm/cub/sup_finetune_resnet18+128_aircraft_epo100_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0/checkpoints/model-epoch99.pt
+Target task on: cub
+PCA: 0.052854122621564525
+SVD: 0.05158562367864694
+Use pretrained network on: dtd
+Loading checkpoint: saved_models/finetune/fullterm/cub/sup_finetune_resnet18+128_dtd_epo100_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0/checkpoints/model-epoch99.pt
+Target task on: cub
+PCA: 0.05158562367864694
+SVD: 0.05327695560253698
+Use pretrained network on: isic
+Loading checkpoint: saved_models/finetune/fullterm/cub/sup_finetune_resnet18+128_isic_epo100_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0/checkpoints/model-epoch99.pt
+Target task on: cub
+PCA: 0.07991543340380547
+SVD: 0.07484143763213535
+Use pretrained network on: merced
+Loading checkpoint: saved_models/finetune/fullterm/cub/sup_finetune_resnet18+128_merced_epo100_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0/checkpoints/model-epoch99.pt
+Target task on: cub
+PCA: 0.06511627906976747
+SVD: 0.06765327695560253
+Use pretrained network on: scenes
+Loading checkpoint: saved_models/finetune/fullterm/cub/sup_finetune_resnet18+128_scenes_epo100_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0/checkpoints/model-epoch99.pt
+Target task on: cub
+PCA: 0.07399577167019022
+SVD: 0.0731501057082452
+Use pretrained network on: ucf101
+Loading checkpoint: saved_models/finetune/fullterm/cub/sup_finetune_resnet18+128_ucf101_epo100_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0/checkpoints/model-epoch99.pt
+Target task on: cub
+PCA: 0.06173361522198728
+SVD: 0.06088794926004226
+Use pretrained network on: cifar100
+Loading checkpoint: saved_models/finetune/fullterm/cub/sup_finetune_resnet18+128_cifar100_epo100_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0/checkpoints/model-epoch99.pt
+Target task on: cub
+PCA: 0.03763213530655396
+SVD: 0.038054968287526414
+Use pretrained network on: daimlerpedcls
+Loading checkpoint: saved_models/finetune/fullterm/cub/sup_finetune_resnet18+128_daimlerpedcls_epo100_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0/checkpoints/model-epoch99.pt
+Target task on: cub
+PCA: 0.03509513742071879
+SVD: 0.03509513742071879
+Use pretrained network on: gtsrb
+Loading checkpoint: saved_models/finetune/fullterm/cub/sup_finetune_resnet18+128_gtsrb_epo100_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0/checkpoints/model-epoch99.pt
+Target task on: cub
+PCA: 0.0668076109936575
+SVD: 0.06807610993657509
+Use pretrained network on: kather
+Loading checkpoint: saved_models/finetune/fullterm/cub/sup_finetune_resnet18+128_kather_epo100_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0/checkpoints/model-epoch99.pt
+Target task on: cub
+PCA: 0.06384778012684988
+SVD: 0.06342494714587743
+Use pretrained network on: svhn
+Loading checkpoint: saved_models/finetune/fullterm/cub/sup_finetune_resnet18+128_svhn_epo100_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0/checkpoints/model-epoch99.pt
+Target task on: cub
+PCA: 0.0625792811839323
+SVD: 0.06046511627906981
+Use pretrained network on: vgg-flowers
+Loading checkpoint: saved_models/finetune/fullterm/cub/sup_finetune_resnet18+128_vgg-flowers_epo100_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0/checkpoints/model-epoch99.pt
+Target task on: cub
+PCA: 0.029175475687103547
+SVD: 0.027906976744186074
+Use pretrained network on: bach
+Loading checkpoint: saved_models/finetune/fullterm/cub/sup_finetune_resnet18+128_bach_epo100_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0/checkpoints/model-epoch99.pt
+Target task on: cub
+PCA: 0.04312896405919664
+SVD: 0.049048625792811884
+Use pretrained network on: protein_atlas
+Loading checkpoint: saved_models/finetune/fullterm/cub/sup_finetune_resnet18+128_protein_atlas_epo100_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0/checkpoints/model-epoch99.pt
+Target task on: cub
+PCA: 0.06638477801268494
+SVD: 0.06173361522198728
+Use pretrained network on: minc
+Loading checkpoint: saved_models/finetune/fullterm/cub/sup_finetune_resnet18+128_minc_epo100_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0/checkpoints/model-epoch99.pt
+Target task on: cub
+PCA: 0.07441860465116279
+SVD: 0.07357293868921777
+evaluation completed

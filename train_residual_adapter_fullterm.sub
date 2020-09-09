@@ -1,0 +1,14 @@
+#!/bin/bash
+#SBATCH --job-name=residual_adapter_fullterm
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=1
+#SBATCH --gres=gpu:2080ti:1
+#SBATCH --mem=32GB
+#SBATCH --time=128:00:00
+#SBATCH --partition=default_gpu
+
+# OPTIONAL: uncomment this if you're using an anaconda environment named <my_env_name>
+. /home/zw287/anaconda3/etc/profile.d/conda.sh
+conda activate mcr2
+
+cd $HOME/mcr2; python train_new_task_adapters.py --dataset aircraft --datadir /share/bharath/zw287/datasets/my_deca --source /home/zw287/mcr2/saved_models/experts/mcr2/sup_expert_resnet18+128_cifar100_epo200_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0 --mode parallel_adapters --savedir saved_residual_adapters_fullterm/

@@ -205,6 +205,17 @@ def load_transforms(name):
                 transforms.RandomAffine(0, shear=(-20, 20))]),
             GaussianBlur(kernel_size=3),
             transforms.ToTensor()])
+    elif _name == 'deca_train':
+        transform = transforms.Compose([
+            transforms.Resize(72),
+            transforms.RandomCrop(64),
+            transforms.RandomHorizontalFlip(),
+            transforms.ToTensor(),])
+    elif _name == 'deca_test':
+        transform = transforms.Compose([
+                transforms.Resize(72),
+                transforms.CenterCrop(64),
+                transforms.ToTensor(),])
     elif _name == "test":
         transform = transforms.ToTensor()
     else:

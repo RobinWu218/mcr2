@@ -1,0 +1,49 @@
+Start training on dataset:aircraft
+project dir: ./saved_models/experts/expand_only/sup_expert_expand_only_resnet18+128_aircraft_epo200_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0
+Number of classes in aircraft is: 100
+training complete.
+Start training on dataset:cub
+project dir: ./saved_models/experts/expand_only/sup_expert_expand_only_resnet18+128_cub_epo200_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0
+Number of classes in cub is: 200
+training complete.
+Start training on dataset:dtd
+project dir: ./saved_models/experts/expand_only/sup_expert_expand_only_resnet18+128_dtd_epo200_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0
+Number of classes in dtd is: 47
+training complete.
+Start training on dataset:isic
+project dir: ./saved_models/experts/expand_only/sup_expert_expand_only_resnet18+128_isic_epo200_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0
+Number of classes in isic is: 8
+training complete.
+Start training on dataset:merced
+project dir: ./saved_models/experts/expand_only/sup_expert_expand_only_resnet18+128_merced_epo200_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0
+Number of classes in merced is: 21
+training complete.
+Start training on dataset:scenes
+project dir: ./saved_models/experts/expand_only/sup_expert_expand_only_resnet18+128_scenes_epo200_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0
+Number of classes in scenes is: 67
+training complete.
+Start training on dataset:ucf101
+project dir: ./saved_models/experts/expand_only/sup_expert_expand_only_resnet18+128_ucf101_epo200_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0
+Number of classes in ucf101 is: 101
+training complete.
+Start training on dataset:cifar100
+project dir: ./saved_models/experts/expand_only/sup_expert_expand_only_resnet18+128_cifar100_epo200_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0
+Files already downloaded and verified
+Number of classes in cifar100 is: 100
+training complete.
+Start training on dataset:daimlerpedcls
+project dir: ./saved_models/experts/expand_only/sup_expert_expand_only_resnet18+128_daimlerpedcls_epo200_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0
+Number of classes in daimlerpedcls is: 2
+training complete.
+Start training on dataset:gtsrb
+project dir: ./saved_models/experts/expand_only/sup_expert_expand_only_resnet18+128_gtsrb_epo200_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0
+Number of classes in gtsrb is: 43
+training complete.
+Start training on dataset:kather
+project dir: ./saved_models/experts/expand_only/sup_expert_expand_only_resnet18+128_kather_epo200_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0
+Number of classes in kather is: 8
+training complete.
+Start training on dataset:omniglot
+project dir: ./saved_models/experts/expand_only/sup_expert_expand_only_resnet18+128_omniglot_epo200_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0
+Number of classes in omniglot is: 1623
+training complete.

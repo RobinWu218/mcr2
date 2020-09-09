@@ -1,0 +1,61 @@
+Use MCR objective to finetune models from experts trained with full term
+Start fintune on dataset:cifar100
+Use model pretrained on dataset:aircraft
+project dir: ./saved_models/finetune/fullterm/cifar100/sup_finetune_resnet18+128_aircraft_epo100_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0
+Loading checkpoint: ./saved_models/experts/mcr2/sup_expert_resnet18+128_aircraft_epo200_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0/checkpoints/model-epoch199.pt
+Files already downloaded and verified
+Number of classes in cifar100 is: 100
+training complete.
+Use model pretrained on dataset:cub
+project dir: ./saved_models/finetune/fullterm/cifar100/sup_finetune_resnet18+128_cub_epo100_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0
+Loading checkpoint: ./saved_models/experts/mcr2/sup_expert_resnet18+128_cub_epo200_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0/checkpoints/model-epoch199.pt
+Files already downloaded and verified
+Number of classes in cifar100 is: 100
+training complete.
+Use model pretrained on dataset:dtd
+project dir: ./saved_models/finetune/fullterm/cifar100/sup_finetune_resnet18+128_dtd_epo100_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0
+Loading checkpoint: ./saved_models/experts/mcr2/sup_expert_resnet18+128_dtd_epo200_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0/checkpoints/model-epoch199.pt
+Files already downloaded and verified
+Number of classes in cifar100 is: 100
+training complete.
+Use model pretrained on dataset:isic
+project dir: ./saved_models/finetune/fullterm/cifar100/sup_finetune_resnet18+128_isic_epo100_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0
+Loading checkpoint: ./saved_models/experts/mcr2/sup_expert_resnet18+128_isic_epo200_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0/checkpoints/model-epoch199.pt
+Files already downloaded and verified
+Number of classes in cifar100 is: 100
+training complete.
+Use model pretrained on dataset:merced
+project dir: ./saved_models/finetune/fullterm/cifar100/sup_finetune_resnet18+128_merced_epo100_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0
+Loading checkpoint: ./saved_models/experts/mcr2/sup_expert_resnet18+128_merced_epo200_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0/checkpoints/model-epoch199.pt
+Files already downloaded and verified
+Number of classes in cifar100 is: 100
+training complete.
+Use model pretrained on dataset:scenes
+project dir: ./saved_models/finetune/fullterm/cifar100/sup_finetune_resnet18+128_scenes_epo100_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0
+Loading checkpoint: ./saved_models/experts/mcr2/sup_expert_resnet18+128_scenes_epo200_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0/checkpoints/model-epoch199.pt
+Files already downloaded and verified
+Number of classes in cifar100 is: 100
+training complete.
+Use model pretrained on dataset:ucf101
+project dir: ./saved_models/finetune/fullterm/cifar100/sup_finetune_resnet18+128_ucf101_epo100_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0
+Loading checkpoint: ./saved_models/experts/mcr2/sup_expert_resnet18+128_ucf101_epo200_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0/checkpoints/model-epoch199.pt
+Files already downloaded and verified
+Number of classes in cifar100 is: 100
+training complete.
+Use model pretrained on dataset:daimlerpedcls
+project dir: ./saved_models/finetune/fullterm/cifar100/sup_finetune_resnet18+128_daimlerpedcls_epo100_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0
+Loading checkpoint: ./saved_models/experts/mcr2/sup_expert_resnet18+128_daimlerpedcls_epo200_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0/checkpoints/model-epoch199.pt
+Files already downloaded and verified
+Number of classes in cifar100 is: 100
+training complete.
+Use model pretrained on dataset:gtsrb
+project dir: ./saved_models/finetune/fullterm/cifar100/sup_finetune_resnet18+128_gtsrb_epo100_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0
+Loading checkpoint: ./saved_models/experts/mcr2/sup_expert_resnet18+128_gtsrb_epo200_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0/checkpoints/model-epoch199.pt
+Files already downloaded and verified
+Number of classes in cifar100 is: 100
+training complete.
+Use model pretrained on dataset:kather
+project dir: ./saved_models/finetune/fullterm/cifar100/sup_finetune_resnet18+128_kather_epo100_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0
+Loading checkpoint: ./saved_models/experts/mcr2/sup_expert_resnet18+128_kather_epo200_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0/checkpoints/model-epoch199.pt
+Files already downloaded and verified
+Number of classes in cifar100 is: 100

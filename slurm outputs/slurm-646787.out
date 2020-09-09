@@ -1,0 +1,77 @@
+Start Evaluation on fullterm pretrained networks
+Use pretrained network on: cub
+Loading checkpoint: saved_models/finetune/fullterm/aircraft/sup_finetune_resnet18+128_cub_epo100_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0/checkpoints/model-epoch99.pt
+Target task on: aircraft
+PCA: 0.06960696069606964
+SVD: 0.06690669066906696
+Use pretrained network on: dtd
+Loading checkpoint: saved_models/finetune/fullterm/aircraft/sup_finetune_resnet18+128_dtd_epo100_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0/checkpoints/model-epoch99.pt
+Target task on: aircraft
+PCA: 0.04740474047404741
+SVD: 0.04560456045604555
+Use pretrained network on: isic
+Loading checkpoint: saved_models/finetune/fullterm/aircraft/sup_finetune_resnet18+128_isic_epo100_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0/checkpoints/model-epoch99.pt
+Target task on: aircraft
+PCA: 0.0651065106510651
+SVD: 0.0663066306630663
+Use pretrained network on: merced
+Loading checkpoint: saved_models/finetune/fullterm/aircraft/sup_finetune_resnet18+128_merced_epo100_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0/checkpoints/model-epoch99.pt
+Target task on: aircraft
+PCA: 0.06420642064206417
+SVD: 0.06480648064806482
+Use pretrained network on: scenes
+Loading checkpoint: saved_models/finetune/fullterm/aircraft/sup_finetune_resnet18+128_scenes_epo100_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0/checkpoints/model-epoch99.pt
+Target task on: aircraft
+PCA: 0.07050705070507046
+SVD: 0.07110711071107112
+Use pretrained network on: ucf101
+Loading checkpoint: saved_models/finetune/fullterm/aircraft/sup_finetune_resnet18+128_ucf101_epo100_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0/checkpoints/model-epoch99.pt
+Target task on: aircraft
+PCA: 0.08310831083108305
+SVD: 0.0813081308130813
+Use pretrained network on: cifar100
+Loading checkpoint: saved_models/finetune/fullterm/aircraft/sup_finetune_resnet18+128_cifar100_epo100_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0/checkpoints/model-epoch99.pt
+Target task on: aircraft
+PCA: 0.05280528052805278
+SVD: 0.05040504050405037
+Use pretrained network on: daimlerpedcls
+Loading checkpoint: saved_models/finetune/fullterm/aircraft/sup_finetune_resnet18+128_daimlerpedcls_epo100_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0/checkpoints/model-epoch99.pt
+Target task on: aircraft
+PCA: 0.04140414041404139
+SVD: 0.03870387038703871
+Use pretrained network on: gtsrb
+Loading checkpoint: saved_models/finetune/fullterm/aircraft/sup_finetune_resnet18+128_gtsrb_epo100_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0/checkpoints/model-epoch99.pt
+Target task on: aircraft
+PCA: 0.0375037503750375
+SVD: 0.03780378037803778
+Use pretrained network on: kather
+Loading checkpoint: saved_models/finetune/fullterm/aircraft/sup_finetune_resnet18+128_kather_epo100_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0/checkpoints/model-epoch99.pt
+Target task on: aircraft
+PCA: 0.05370537053705371
+SVD: 0.05400540054005398
+Use pretrained network on: svhn
+Loading checkpoint: saved_models/finetune/fullterm/aircraft/sup_finetune_resnet18+128_svhn_epo100_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0/checkpoints/model-epoch99.pt
+Target task on: aircraft
+PCA: 0.07560756075607555
+SVD: 0.07200720072007205
+Use pretrained network on: vgg-flowers
+Loading checkpoint: saved_models/finetune/fullterm/aircraft/sup_finetune_resnet18+128_vgg-flowers_epo100_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0/checkpoints/model-epoch99.pt
+Target task on: aircraft
+PCA: 0.03690369036903696
+SVD: 0.03480348034803482
+Use pretrained network on: bach
+Loading checkpoint: saved_models/finetune/fullterm/aircraft/sup_finetune_resnet18+128_bach_epo100_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0/checkpoints/model-epoch99.pt
+Target task on: aircraft
+PCA: 0.04110411041104112
+SVD: 0.038403840384038435
+Use pretrained network on: protein_atlas
+Loading checkpoint: saved_models/finetune/fullterm/aircraft/sup_finetune_resnet18+128_protein_atlas_epo100_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0/checkpoints/model-epoch99.pt
+Target task on: aircraft
+PCA: 0.06720672067206723
+SVD: 0.06930693069306926
+Use pretrained network on: minc
+Loading checkpoint: saved_models/finetune/fullterm/aircraft/sup_finetune_resnet18+128_minc_epo100_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0/checkpoints/model-epoch99.pt
+Target task on: aircraft
+PCA: 0.04890489048904889
+SVD: 0.050705070507050753
+evaluation completed

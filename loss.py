@@ -72,3 +72,36 @@ class MaximalCodingRateReduction(torch.nn.Module):
         return (total_loss_empi,
                 [discrimn_loss_empi.item(), compress_loss_empi.item()],
                 [discrimn_loss_theo.item(), compress_loss_theo.item()])
+
+class MaximalCodingRateExpansion(torch.nn.Module):
+    def __init__(self, gam1=1.0, gam2=1.0, eps=0.01):
+        super(MaximalCodingRateExpansion, self).__init__()
+        self.gam1 = gam1
+        self.gam2 = gam2
+        self.eps = eps
+
+    def compute_discrimn_loss_empirical(self, W):
+        """Empirical Discriminative Loss."""
+        p, m = W.shape
+        I = torch.eye(p).cuda()
+        scalar = p / (m * self.eps)
+        logdet = torch.logdet(I + self.gam1 * scalar * W.matmul(W.T))
+        return logdet / 2.
+
+    def compute_discrimn_loss_theoretical(self, W):
+        """Theoretical Discriminative Loss."""
+        p, m = W.shape
+        I = torch.eye(p).cuda()
+        scalar = p / (m * self.eps)
+        logdet = torch.logdet(I + scalar * W.matmul(W.T))
+        return logdet / 2.
+
+    def forward(self, X, Y, num_classes=None):
+        
+        W = X.T
+        discrimn_loss_empi = self.compute_discrimn_loss_empirical(W)
+        discrimn_loss_theo = self.compute_discrimn_loss_theoretical(W)
+        
+        total_loss_empi = -discrimn_loss_empi 
+        return (total_loss_empi,
+                discrimn_loss_empi, discrimn_loss_theo)

@@ -7,7 +7,7 @@ from augmentloader import AugmentLoader
 from torch.optim import SGD
 
 import train_func as tf
-from loss import MaximalCodingRateReduction
+from loss import MaximalCodingRateReduction, MaximalCodingRateExpansion
 import utils
 
 
@@ -54,7 +54,8 @@ args = parser.parse_args()
 if not os.path.exists(args.data_dir):
     raise NameError("No dataset found in directory {}".format(args.data_dir))
 
-for ds_name in os.listdir(args.data_dir)[12:]:
+print("Use MCR objective")
+for ds_name in os.listdir(args.data_dir)[:5]:
     print("Start training on dataset:{}".format(ds_name))
     ## Pipelines Setup
     model_dir = os.path.join(args.save_dir,
@@ -83,6 +84,7 @@ for ds_name in os.listdir(args.data_dir)[12:]:
     else:
         net = tf.load_architectures(args.arch, args.fd)
     transforms = tf.load_transforms(args.transform)
+    print("transform used:".format(args.transforms))
     trainset = tf.load_trainset(ds_name, transforms, path=args.data_dir)
     print("Number of classes in {} is: {}".format(ds_name,trainset.num_classes))
     trainset = tf.corrupt_labels(trainset, args.lcr, args.lcs)
@@ -102,5 +104,6 @@ for ds_name in os.listdir(args.data_dir)[12:]:
             optimizer.step()
 
             utils.save_state(model_dir, epoch, step, loss.item(), *loss_empi, *loss_theo)
+            # utils.save_state(model_dir, epoch, step, loss.item(), loss_empi.item(), loss_theo.item())
         utils.save_ckpt(model_dir, net, epoch)
     print("training complete.")

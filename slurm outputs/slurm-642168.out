@@ -1,0 +1,20 @@
+Start training on dataset:svhn
+project dir: ./saved_models/experts/expand_only/sup_expert_expand_only_resnet18+128_svhn_epo200_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0
+Number of classes in svhn is: 10
+training complete.
+Start training on dataset:vgg-flowers
+project dir: ./saved_models/experts/expand_only/sup_expert_expand_only_resnet18+128_vgg-flowers_epo200_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0
+Number of classes in vgg-flowers is: 102
+training complete.
+Start training on dataset:bach
+project dir: ./saved_models/experts/expand_only/sup_expert_expand_only_resnet18+128_bach_epo200_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0
+Number of classes in bach is: 4
+training complete.
+Start training on dataset:protein_atlas
+project dir: ./saved_models/experts/expand_only/sup_expert_expand_only_resnet18+128_protein_atlas_epo200_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0
+Number of classes in protein_atlas is: 28
+training complete.
+Start training on dataset:minc
+project dir: ./saved_models/experts/expand_only/sup_expert_expand_only_resnet18+128_minc_epo200_bs1000_lr0.001_mom0.9_wd0.0005_gam11.0_gam21.0_eps0.5_lcr0.0
+Number of classes in minc is: 23
+training complete.
